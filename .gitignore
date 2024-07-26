@@ -1,0 +1,70 @@
+fantasy-football-2024-430622-70fe6adeafe5.json
+
+# Mac files
+**/*.DS_Store
+
+# Microsoft office backup files
+**/~*
+
+# Pycache
+**/__pycache__/
+
+# PyCharm
+**/*.idea
+
+# Virtualenv
+**/venv/
+**/env/
+
+# Environment variables
+.env
+
+# RStudio
+**/*.RData
+**/.Ruserdata
+**/.Rhistory
+**/*.Rproj.user
+**/*.Rproj.user*
+# **/*.Rproj
+**/*.Rapp.history
+
+# Big Data
+**/*.db
+**/*.h5
+**/*.hdf5
+
+# Data
+# **/*.csv
+# **/*.tsv
+# **/*.xlsx
+
+# Compressed
+**/*.tar
+**/*.zip
+**/*.rar
+
+# Data
+# **/raw/*
+# **/proc/*
+
+# LaTeX/Sweave
+**/*.tex
+**/*.synctex.gz
+
+# PDF
+**/*.pdf
+
+# Logs
+**/*.log
+
+# Authorization keys
+**/*.httr-oauth
+
+# Python Eggs
+*.egg-info/
+
+# Keep READMEs
+!**/README.md
+
+# Keep codebooks
+!**/*codebook**

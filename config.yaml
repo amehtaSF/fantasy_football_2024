@@ -1,0 +1,13 @@
+
+files:
+  sleeper:
+    all_players_csv: data/sleeper/all_players.csv
+    all_players_json: data/sleeper/all_players.json
+    adp: data/sleeper/adp.csv
+
+urls:
+  sleeper:
+    all_players: https://api.sleeper.app/v1/players/nfl
+    adp_gsheet: https://docs.google.com/spreadsheets/d/1wmjxi3K5rjIYME_lskUvquLbN331YV0vi-kg5VakpdY/edit?gid=1171234637#gid=1171234637
+keys:
+  gspread: fantasy-football-2024-430622-70fe6adeafe5.json
