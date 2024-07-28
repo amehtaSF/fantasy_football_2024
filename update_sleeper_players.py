@@ -71,8 +71,8 @@ if __name__ == "__main__":
     df_players = df_players[df_players["position"].isin(positions)]
     
     # add Positional Rank to df_players and keep only the columns Positional Rank and Redraft Half PPR ADP
-    df_players = df_players.merge(df_adp[["Player Id", "Positional Rank", "Redraft Half PPR ADP", "Date"]], left_on="id", right_on="Player Id", how="left")
-    df_players.rename(columns={"Positional Rank": "positional_rank", "Redraft Half PPR ADP": "adp", "Date": "adp_date"}, inplace=True)
+    df_players = df_players.merge(df_adp[["Player Id", "Positional Rank", "Redraft Half PPR ADP", "Date", "rank_int"]], left_on="id", right_on="Player Id", how="left")
+    df_players.rename(columns={"Positional Rank": "positional_rank", "Redraft Half PPR ADP": "adp", "Date": "adp_date", "id": "sleeper_id"}, inplace=True)
     
     # Add defense to data frame
     df_players = pd.concat([df_players, df_defense])

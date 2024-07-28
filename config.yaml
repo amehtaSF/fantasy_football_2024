@@ -4,6 +4,8 @@ files:
     all_players_csv: data/sleeper/all_players.csv
     all_players_json: data/sleeper/all_players.json
     adp: data/sleeper/adp.csv
+  fantasydata:
+    fpts_all_ssns: data/fantasydata/fpts_2001-2023.csv
 
 urls:
   sleeper:
