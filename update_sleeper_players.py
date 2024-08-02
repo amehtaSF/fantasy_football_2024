@@ -17,6 +17,7 @@ ALL_PLAYERS_JSON = config["files"]["sleeper"]["all_players_json"]
 def get_all_players():
     response = requests.get(SLEEPER_ALL_PLAYERS_URL)
     response.raise_for_status()
+    print(f"{len(response.json().keys())} players found")
     return response.json()
 
 def check_all_players_file():
@@ -51,6 +52,8 @@ if __name__ == "__main__":
     
     # get and save defense
     df_defense = df_players[df_players["position"] == "DEF"]
+    df_defense["full_name"] = df_defense["first_name"] + " " + df_defense["last_name"]
+    print(df_defense["full_name"])
     
     # read adp file
     df_adp = pd.read_csv(config["files"]["sleeper"]["adp"])
@@ -60,8 +63,8 @@ if __name__ == "__main__":
     # get integer rank in positional_rank column
     df_adp["rank_int"] = df_adp["Positional Rank"].str.extract("(\d+)").astype(int)
     
-    # filter to only rank_int <= 20
-    df_adp = df_adp[df_adp["rank_int"] <= 20]
+    # # filter to only rank_int <= 20
+    # df_adp = df_adp[df_adp["rank_int"] <= 20]
     
     # filter df_players such that id is in df_adp["Player ID"]
     df_players = df_players[df_players["id"].isin(df_adp["Player Id"].astype(str))]
@@ -70,6 +73,7 @@ if __name__ == "__main__":
     positions = ["QB", "RB", "WR", "TE", "K"]
     df_players = df_players[df_players["position"].isin(positions)]
     
+
     # add Positional Rank to df_players and keep only the columns Positional Rank and Redraft Half PPR ADP
     df_players = df_players.merge(df_adp[["Player Id", "Positional Rank", "Redraft Half PPR ADP", "Date", "rank_int"]], left_on="id", right_on="Player Id", how="left")
     df_players.rename(columns={"Positional Rank": "positional_rank", "Redraft Half PPR ADP": "adp", "Date": "adp_date", "id": "sleeper_id"}, inplace=True)

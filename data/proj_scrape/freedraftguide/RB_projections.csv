@@ -1,11 +1,11 @@
-player,team,pos,source,source_url,rush_att,rush_yds,rush_td,rec,rec_yds,rec_td,fpts
+player,team,pos,source,source_url,rush_att,rush_yd,rush_td,rec_rcpt,rec_yds,rec_td,fpts
 Christian McCaffrey,SF,RB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=1,264,1322,12,69,586,6,333.3
 Breece Hall,NYJ,RB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=1,271,1249,11,73,554,4,306.8
 Bijan Robinson,ATL,RB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=1,269,1239,10,65,488,4,289.2
 Saquon Barkley,PHI,RB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=1,291,1341,9,58,400,4,281.1
 Jonathan Taylor,IND,RB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=1,296,1364,12,43,336,2,275.5
 Jahmyr Gibbs,DET,RB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=1,238,1215,10,63,396,2,264.6
-Devon Achane,MIA,RB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=1,218,1198,11,53,386,3,268.9
+De'Von Achane,MIA,RB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=1,218,1198,11,53,386,3,268.9
 Travis Etienne,JAX,RB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=1,262,1156,10,56,476,2,263.2
 Josh Jacobs,GB,RB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=1,278,1195,11,53,399,2,263.9
 Kyren Williams,LAR,RB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=1,248,1191,11,51,336,3,262.2

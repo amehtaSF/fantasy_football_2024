@@ -1,36 +1,33 @@
-gp,fg_made,fg_att,fg_longest,fg_1_19_made,fg_1_19_att,fg_20_29_made,fg_20_29_att,fg_30_39_made,fg_30_39_att,fg_40_49_made,fg_40_49_att,fg_50_made,fg_50_att,xp_made,xp_att,fpts,fp_per_game,pos,source,source_url,fpts_halfppr_adjust,player,team
-17,39,44,—,0.308,0.309,11.8,11.9,11.6,11.8,10.6,12.1,4.58,4.58,54,56,171,10.1,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Younghoe Koo,ATL
-17,35,38,—,0.264,0.265,10.6,10.7,10.4,11.8,7.6,8.5,5.6,5.6,46,47,151,8.9,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Harrison Butker,C
-17,35,42,—,0.275,0.276,7.7,7.8,12,13.2,10.2,12.3,4.55,4.55,42,43,147,8.6,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Jason Myers,SEA
-17,32,36,—,0.251,0.252,9,9.1,8.9,9,10.4,11.6,3.17,3.17,51,52,147,8.6,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Justin Tucker,BAL
-17,31,34,—,0.255,0.255,8.8,8.9,8.7,9.6,7.8,8.6,5.4,5.4,53,54,146,8.6,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Jake Elliott,PHI
-17,34,38,—,0.256,0.257,10.3,10.4,10.5,10.7,7.4,10.2,5.4,5.4,43,45,145,8.5,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Ka'imi Fairbairn,HOU
-17,34,38,—,0.265,0.265,8,8.1,12.5,14.3,7.6,8.5,5.6,5.6,43,47,145,8.5,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Brandon Aubrey,DAL
-17,31,37,—,0.241,0.241,9.6,10.7,7.8,7.9,8,10,5.1,5.1,49,50,142,8.4,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Blake Grupe,NO
-17,30,34,—,0.253,0.253,7,7.1,8.2,8.3,9,10,5.4,5.4,49,50,139,8.2,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Evan McPherson,CIN
-17,31,34,—,0.253,0.253,7.8,7.8,8.3,8.4,9.2,10.2,5.4,5.4,45,46,138,8.1,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Cameron Dicker,LAC
-17,29,34,—,0.229,0.229,6.8,6.9,8.3,8.5,8.6,10.6,4.82,4.82,51,52,138,8.1,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Jason Sanders,MIA
-17,32,38,—,0.262,0.263,8.6,8.7,10,10.7,7.5,9.4,5.6,5.6,41,42,137,8.1,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Matt Gay,IND
-17,29,36,—,0.232,0.232,6.9,7.7,11,12.1,6.7,10,3.7,3.7,49,50,136,8.0,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Tyler Bass,BUF
-17,29,35,—,0.227,0.227,8.4,8.5,9.4,10.7,6.5,9.7,4.82,4.82,49,50,136,8.0,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Jake Moody,SF
-17,34,38,—,0.267,0.267,7.3,7.4,9.9,10.8,11.3,12.6,4.83,4.83,33,36,135,7.9,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Greg Zuerlein,NYJ
-17,31,37,—,0.248,0.248,8.5,8.6,11.8,11.9,7.1,10.6,3.2,3.2,40,46,133,7.8,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Anders Carlson,GB
-17,32,36,—,0.257,0.257,8.5,8.6,9.7,9.8,8.2,10.1,5.5,5.5,37,40,133,7.8,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Cairo Santos,CHI
-17,30,34,—,0.239,0.24,7.8,7.9,9.8,10,6.9,9.6,5.1,5.1,41,42,131,7.7,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Chase McLaughlin,TB
-17,31,35,—,0.247,0.247,7.6,7.6,8,8.1,9.7,12.3,5.2,5.2,37,40,130,7.6,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Dustin Hopkins,CLE
-17,31,37,—,0.313,0.316,8.8,9,10,11.1,8.8,11.4,3.44,3.44,37,41,130,7.6,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Joshua Karty,LAR
-17,29,34,—,0.254,0.254,7,7,8.9,10,7.3,9,5.4,5.4,38,40,125,7.4,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Matt Prater,ARI
-17,25,30,—,0.252,0.255,7.1,7.3,8.1,9,7.1,9.2,2.77,2.77,47,52,122,7.2,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Jake Bates,DET
-17,28,34,—,0.217,0.217,8.7,8.7,10.3,11.3,6.2,8.6,2.97,2.97,36,38,120,7.1,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Wil Lutz,DEN
-17,27,31,—,0.218,0.218,7.7,7.9,7.1,7.6,7.4,9.2,4.64,4.64,33,35,114,6.7,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Chris Boswell,PIT
-17,26,31,—,0.258,0.26,7.2,7.4,8.2,9.2,7.2,9.4,2.83,2.83,33,37,111,6.5,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Will Reichard,MIN
-17,25,29,—,0.205,0.205,8.2,8.3,6.7,7.3,7.5,8.4,2.71,2.71,35,35,110,6.5,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Daniel Carlson,LV
-17,25,27,—,0.202,0.203,7.4,7.5,7.6,7.7,6.1,6.8,4.02,4.02,31,33,106,6.2,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Nick Folk,N
-17,26,29,—,0.2,0.2,5.5,5.5,8,8.1,7.7,9.3,4.21,4.21,25,28,103,6.1,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Eddy Pineiro,CAR
-17,23,28,—,0.23,0.232,6.4,6.7,7.4,8.2,6.5,8.5,2.41,2.41,33,36,102,6.0,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Ramiz Ahmed,WAS
-17,21,27,—,0.174,0.174,4.78,4.83,6.9,8.2,5.7,8.5,3.69,3.69,32,33,95,5.6,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Graham Gano,NYG
-17,19,26,—,0.151,0.151,4.73,4.78,5.9,7,5.9,8.8,2.36,2.36,28,29,85,5.0,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Chad Ryland,NE
-17,19,27,—,0.173,0.173,4.76,5.3,8.2,10.9,4.98,7.7,1.2,1.2,19,25,76,4.5,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Riley Patterson,JAC
-17,13,17,—,0.129,0.13,3.61,3.72,4.12,5.1,3.61,5.2,1.42,1.42,14,19,53,3.1,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Cam Little,JAC
-17,0,0,—,—,—,—,—,—,—,—,—,—,—,0,0,0,0.0,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Randy Bullock,NYG
-17,0,0,—,—,—,—,—,—,—,—,—,—,—,0,0,0,0.0,K,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,False,Brett Maher,LAR
+team,def_int,def_sfty,def_sack,def_tkl,def_fum_rec,def_fum_forced,def_td,def_pts_allowed,def_pts_allowed_per_game,pass_yd_allowed,rush_yd_allowed,total_yd_allowed,total_yd_allowed_per_game,fpts,fp_per_game,player,pos,source,source_url
+Baltimore,16,0,54.7,671,14,20,3.6,334,19.6,0,1774,4645,273.2,238.3,14.0,Baltimore,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+N.Y. Jets,16,0,60.2,631,12,17,3.3,349,20.5,0,1731,4250,250.0,238.0,14.0,N.Y. Jets,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Kansas City,12,0,55.8,663,13,18,2.8,337,19.8,0,1857,4491,264.2,224.6,13.2,Kansas City,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+San Francisco,16,0,42.3,686,12,16,3.1,341,20.1,0,1739,5096,299.8,218.9,12.9,San Francisco,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Dallas,16,0,59.2,668,15,20,3.4,388,22.8,0,1749,5053,297.2,209.6,12.3,Dallas,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Cleveland,17,0,54.7,654,12,16,3.1,398,23.4,0,1761,4909,288.8,199.3,11.7,Cleveland,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Miami,13,0,56.1,681,15,21,3.0,406,23.9,0,1559,4989,293.5,198.1,11.7,Miami,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Philadelphia,15,0,50.8,678,14,19,3.1,398,23.4,0,1766,5008,294.6,195.4,11.5,Philadelphia,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Tampa Bay,11,0,50.1,706,15,21,2.8,341,20.1,0,1661,5177,304.5,186.9,11.0,Tampa Bay,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Minnesota,11,0,46.6,696,13,18,2.5,407,23.9,0,1622,5080,298.8,177.6,10.4,Minnesota,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Atlanta,12,0,49.9,663,10,14,2.6,438,25.8,0,1624,4955,291.5,177.5,10.4,Atlanta,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Buffalo,15,0,54.9,667,17,23,3.6,369,21.7,0,2013,5171,304.2,174.5,10.3,Buffalo,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+New England,13,0,40.7,687,12,17,2.6,405,23.8,0,1431,4832,284.2,174.3,10.3,New England,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Indianapolis,13,0,71.7,679,13,17,2.7,449,26.4,0,1776,5162,303.6,173.9,10.2,Indianapolis,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Houston,12,0,65.4,696,13,17,3.3,386,22.7,0,1679,5212,306.6,169.2,10.0,Houston,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Carolina,13,0,39.8,697,8,11,2.4,456,26.8,0,1734,4962,291.9,164.2,9.7,Carolina,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Cincinnati,15,0,52.4,687,13,18,3.3,392,23.1,0,1961,5635,331.5,162.2,9.5,Cincinnati,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Pittsburgh,15,0,53.8,681,13,18,3.0,370,21.8,0,1838,5442,320.1,161.8,9.5,Pittsburgh,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+L.A. Chargers,12,0,52.8,680,15,21,3.2,391,23.0,0,1783,5355,315.0,160.0,9.4,L.A. Chargers,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+N.Y. Giants,14,0,42.1,692,17,23,3.3,402,23.6,0,2041,5499,323.5,157.9,9.3,N.Y. Giants,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+New Orleans,16,0,42.7,671,14,19,3.4,383,22.5,0,1886,5288,311.1,157.1,9.2,New Orleans,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Green Bay,13,0,50.3,690,13,18,2.9,388,22.8,0,1956,5543,326.1,153.7,9.0,Green Bay,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Jacksonville,13,0,42.1,694,16,22,3.1,390,22.9,0,1804,5387,316.9,152.7,9.0,Jacksonville,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Seattle,13,0,50.7,694,12,16,2.7,400,23.5,0,2050,5699,335.2,150.9,8.9,Seattle,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Las Vegas,12,0,49.5,704,13,18,2.6,375,22.1,0,1745,5185,305.0,149.1,8.8,Las Vegas,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Detroit,15,0,43.8,675,10,14,2.9,411,24.2,0,1664,5608,329.9,145.2,8.5,Detroit,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Chicago,18,0,36.6,683,9,13,3.0,388,22.8,0,1644,5106,300.4,142.6,8.4,Chicago,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Arizona,11,0,45.2,694,12,16,2.5,471,27.7,0,1965,5619,330.5,140.2,8.2,Arizona,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Tennessee,11,0,47.6,689,11,16,2.3,412,24.2,0,1530,5164,303.8,139.4,8.2,Tennessee,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+L.A. Rams,14,0,40.3,676,9,12,2.6,429,25.2,0,1726,5436,319.8,135.9,8.0,L.A. Rams,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Washington,13,0,51.4,692,13,19,2.8,481,28.3,0,1846,5462,321.3,120.2,7.1,Washington,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/
+Denver,9,0,44.4,713,18,25,2.8,478,28.1,0,1970,5877,345.7,115.2,6.8,Denver,DEF,CBS,https://www.cbssports.com/fantasy/football/stats/DST/2024/restofseason/projections/nonppr/

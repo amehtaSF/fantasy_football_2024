@@ -1,33 +1,33 @@
-name,pos,fpts,def_tkl,def_sack,def_fum_forced,def_fum_rec,def_int
-Browns D/ST,DEF,140.92365732399998,996.8885068,45.97401919,12.72893251,8.752180944,13.74922375
-Cowboys D/ST,DEF,130.87781723999998,1065.223238,45.8206185,13.62569072,9.033086097,13.12749682
-Jets D/ST,DEF,130.96533121699997,1036.632606,41.26591298,13.94491865,9.000936291,14.63754541
-Ravens D/ST,DEF,130.088350556,1038.681222,45.68237291,13.0391285,8.925384223,14.62057893
-49ers D/ST,DEF,126.78102715399997,1054.683851,43.13704134,11.70371178,8.858093838,14.70093327
-Steelers D/ST,DEF,128.21297348299998,1041.39829,44.20772369,14.53927801,8.918344143,12.54126416
-Dolphins D/ST,DEF,117.545405306,1057.702927,41.54218809,16.07424705,8.867510748,13.02537383
-Jaguars D/ST,DEF,118.308353781,1038.078165,41.49353128,10.95659246,9.027866325,13.34259426
-Saints D/ST,DEF,114.16266799100005,1018.883678,40.01063527,9.744315958,8.830454853,13.78815562
-Bengals D/ST,DEF,115.76012907999998,1024.502379,44.60996867,13.01021192,9.253842047,13.374582
-Chiefs D/ST,DEF,106.896160455,1032.228048,44.07643316,13.62677748,8.915107903,13.08699551
-Lions D/ST,DEF,111.054888793,1046.525735,42.55532705,11.31710374,9.183485121,15.12436421
-Bears D/ST,DEF,108.89637804999998,1086.039047,38.99847567,12.81170394,8.902088276,14.12530484
-Bills D/ST,DEF,92.43473080499997,1041.683666,40.46919316,13.81848626,8.985140099,13.80395699
-Colts D/ST,DEF,98.613097775,1096.142408,40.90963633,14.99711364,8.998962263,13.45331559
-Seahawks D/ST,DEF,98.11926181600003,1028.136336,40.22827829,12.82791431,8.755946304,13.82099538
-Texans D/ST,DEF,96.19945131200001,1096.54057,41.09799928,12.66498668,9.510793294,13.82765612
-Panthers D/ST,DEF,91.30722980299998,1087.489781,39.68107679,11.62545971,8.710278301,13.36326192
-Packers D/ST,DEF,89.88729748899999,1077.422327,40.30861135,11.46008261,9.097439706,13.44953869
-Eagles D/ST,DEF,89.08402188399998,1027.414969,46.76170075,11.2638622,9.116669004,15.01992658
-Patriots D/ST,DEF,86.41501944200002,1047.453019,37.63438472,11.77582622,8.679112739,12.78115663
-Raiders D/ST,DEF,90.244194284,1075.880119,40.46380709,12.29925165,8.695849237,12.42652458
-Falcons D/ST,DEF,79.88421751100002,1034.713912,40.40977718,12.79784682,8.62500902,13.36758262
-Buccaneers D/ST,DEF,79.68894528599998,1074.747023,41.15444083,16.35344244,8.666737394,13.17190754
-Vikings D/ST,DEF,81.32700747800001,1143.549731,40.54392038,16.12010719,8.863030877,13.21037114
-Chargers D/ST,DEF,78.48806183800001,1042.434838,41.71270258,15.06612511,8.899116387,13.56144377
-Commanders D/ST,DEF,78.131723714,1088.251335,43.75241807,13.64042958,8.904505372,13.1294902
-Broncos D/ST,DEF,65.733076591,1088.840331,38.94310314,12.39536224,8.688746269,12.5724783
-Giants D/ST,DEF,67.284549184,1013.992962,42.83900466,15.67668728,8.735174656,12.95495807
-Titans D/ST,DEF,64.505077768,1059.155007,39.44268966,10.59079002,9.011378583,13.09815524
-Rams D/ST,DEF,64.271646417,1050.567175,39.80557733,11.9496722,8.689962774,13.88845019
-Cardinals D/ST,DEF,53.075291913999976,1071.589795,36.74776979,10.39809654,8.591468904,12.8857535
+player,pos,fpts,def_tkl,def_sack,def_fum_forced,def_fum_rec,def_int,source,source_url,team
+Browns D/ST,DEF,138.97658042999998,996.8885068,45.95840735,12.72893251,8.752309914,13.74397551,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Browns D/ST
+Cowboys D/ST,DEF,129.76728220599998,1064.739594,45.43462255,13.42925068,9.038695551,13.145059,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Cowboys D/ST
+Jets D/ST,DEF,130.66425811099998,1036.632606,41.40280714,13.94491865,9.132934428,14.65880592,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Jets D/ST
+Ravens D/ST,DEF,129.382174654,1033.145579,45.56528758,13.08639032,8.927854707,14.7238352,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Ravens D/ST
+49ers D/ST,DEF,125.55185676599997,1054.683851,43.0353509,11.70371178,8.890190405,14.55167852,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,49ers D/ST
+Steelers D/ST,DEF,126.57543141699998,1041.811477,44.18929428,14.5499573,8.920590562,12.49235301,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Steelers D/ST
+Dolphins D/ST,DEF,116.79500907199997,1053.654682,41.91029355,15.21208593,8.87705852,12.99002937,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Dolphins D/ST
+Jaguars D/ST,DEF,116.77228880899999,1038.078165,41.48752866,10.95659246,9.033342323,13.34028616,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Jaguars D/ST
+Saints D/ST,DEF,113.40306023900003,1018.883678,40.01683018,9.744315958,8.830669098,13.79027437,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Saints D/ST
+Bengals D/ST,DEF,114.97828669199998,1024.502379,44.6224598,13.01021192,9.247116689,13.37843413,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Bengals D/ST
+Chiefs D/ST,DEF,105.968842533,1032.228048,44.08001105,13.62677748,8.91323937,13.08829329,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Chiefs D/ST
+Lions D/ST,DEF,110.10673834500001,1046.525735,42.55672486,11.31710374,9.19426891,15.1249822,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Lions D/ST
+Bears D/ST,DEF,108.02782128599998,1086.039047,39.00470145,12.81170394,8.914456136,14.12767038,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Bears D/ST
+Bills D/ST,DEF,91.502139929,1041.683666,40.47407716,13.81848626,8.989181419,13.80580975,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Bills D/ST
+Colts D/ST,DEF,94.39962442599997,1090.619021,40.51937698,14.40353805,9.000935941,13.46561045,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Colts D/ST
+Seahawks D/ST,DEF,97.22959053400005,1028.136336,40.23467585,12.82791431,8.757336057,13.82334459,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Seahawks D/ST
+Texans D/ST,DEF,94.656853868,1096.750559,40.66462572,12.42674551,9.519085609,13.83134788,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Texans D/ST
+Panthers D/ST,DEF,90.47732513499999,1087.489781,39.68349978,11.62545971,8.711924517,13.36417845,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Panthers D/ST
+Eagles D/ST,DEF,89.377526575,1039.069345,46.74980224,11.49308161,9.126676646,15.03652912,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Eagles D/ST
+Raiders D/ST,DEF,88.83324873,1075.880119,40.30259529,12.29925165,8.692103395,12.30762873,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Raiders D/ST
+Packers D/ST,DEF,88.72239113299999,1077.422327,40.30582711,11.46008261,9.106027499,13.44858838,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Packers D/ST
+Patriots D/ST,DEF,87.14082749900004,1047.453019,37.61352189,11.77582622,8.688382662,12.77365498,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Patriots D/ST
+Vikings D/ST,DEF,79.19771179000003,1140.980268,40.54328285,16.41856681,8.871790924,13.07057487,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Vikings D/ST
+Falcons D/ST,DEF,79.10210346500003,1034.713912,40.41534005,12.79784682,8.623781808,13.36956579,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Falcons D/ST
+Commanders D/ST,DEF,78.56441116500001,1088.251335,43.75194725,13.64042958,8.921825428,13.12916044,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Commanders D/ST
+Chargers D/ST,DEF,77.23724870800001,1042.434838,41.72217972,15.06612511,8.894726688,13.56478473,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Chargers D/ST
+Buccaneers D/ST,DEF,75.84389625,1074.747023,40.98728018,16.35344244,8.676161553,13.04847592,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Buccaneers D/ST
+Giants D/ST,DEF,67.415044366,1030.340793,43.79436414,15.88921798,8.731479777,13.01318687,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Giants D/ST
+Titans D/ST,DEF,63.54448457599998,1058.42256,39.68651771,10.11381569,9.022285142,13.00768483,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Titans D/ST
+Rams D/ST,DEF,63.40727927499998,1052.684132,39.832387,12.0008427,8.705586127,13.87580933,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Rams D/ST
+Broncos D/ST,DEF,63.08066686900001,1088.840331,38.91547754,12.39536224,8.698859857,12.56340503,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Broncos D/ST
+Cardinals D/ST,DEF,52.23088380599998,1071.589795,36.75026627,10.39809654,8.598350061,12.88674834,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,Cardinals D/ST

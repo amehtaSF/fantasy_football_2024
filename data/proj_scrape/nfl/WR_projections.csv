@@ -1,43 +1,43 @@
-player,gp,rec_rcpt,rec_yd,rec_td,rush_yd,rush_td,fumbles,fpts
-Tyreek Hill,16,112,1598,9,36,-,1,383.4
-CeeDee Lamb,16,115,1455,9,74,1,1,383.4
-Ja'Marr Chase,16,105,1367,8,16,-,1,341.8
-Justin Jefferson,16,105,1427,7,12,-,1,341.4
-Amon-Ra St. Brown,16,111,1285,7,36,-,1,338.6
-Garrett Wilson,16,99,1256,8,31,-,1,323.2
-A.J. Brown,16,89,1351,8,6,-,1,315.2
-Puka Nacua,16,94,1256,7,42,-,1,310.8
-Chris Olave,16,88,1176,6,5,-,1,284.1
-Davante Adams,16,89,1099,7,5,-,1,283.9
-Drake London,16,86,1121,7,11,-,1,282.2
-Mike Evans,16,73,1108,8,5,-,1,266.8
-Deebo Samuel Sr.,15,63,895,6,238,3,1,259.8
-Brandon Aiyuk,16,76,1113,7,5,-,1,265.8
-DeVonta Smith,16,87,1062,6,6,-,1,271.3
-Marvin Harrison Jr.,16,79,1077,7,7,-,1,266.9
-Cooper Kupp,16,89,1011,6,24,-,1,271.0
-DK Metcalf,16,74,1059,8,5,-,1,263.4
-Jaylen Waddle,16,80,1099,6,19,-,1,265.8
-Amari Cooper,16,75,1102,7,5,-,1,263.2
-DJ Moore,16,76,1064,7,24,-,1,262.8
-Nico Collins,16,76,1074,7,10,-,1,262.4
-Michael Pittman,16,91,1015,5,5,-,1,266.5
-Tank Dell,16,78,995,6,67,-,1,257.2
-Stefon Diggs,16,80,976,7,5,-,1,258.1
-Christian Kirk,16,80,1022,6,11,-,1,257.3
-Tee Higgins,16,73,1034,7,5,-,1,253.4
-Chris Godwin,16,87,980,5,26,-,1,259.1
-Malik Nabers,16,76,1031,6,15,-,1,252.6
-Zay Flowers,16,81,932,6,51,-,1,253.8
-George Pickens,16,71,1072,6,10,-,1,248.7
-Keenan Allen,15,84,933,6,11,-,1,254.4
-Calvin Ridley,16,72,979,6,34,-,1,243.3
-Terry McLaurin,16,75,998,5,6,-,1,240.9
-Rome Odunze,16,71,961,6,7,-,1,237.3
-Jayden Reed,16,71,886,5,76,1,1,236.7
-Jordan Addison,15,69,961,6,18,-,1,235.4
-Rashee Rice,13,77,839,6,9,-,1,234.3
-DeAndre Hopkins,15,68,867,5,9,-,1,217.6
-Xavier Worthy,16,61,818,6,21,-,-,211.4
-Marquise Brown,16,60,837,6,14,-,1,209.1
-Ladd McConkey,16,64,780,6,11,-,-,211.1
+player,gp,pass_yd,pass_td,pass_int,rush_yd,rush_td,rec_rcpt,rec_yd,rec_td,fumbles_lost,fpts,pos,source,source_url,fpts_halfppr_adjust
+Tyreek Hill WR - MIA,16,-,-,-,36,-,112,1598,9,1,383.4,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+CeeDee Lamb WR - DAL,16,-,-,-,74,1,115,1455,9,1,383.4,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Ja'Marr Chase WR - CIN,16,-,-,-,16,-,105,1367,8,1,341.8,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Justin Jefferson WR - MIN,16,-,-,-,12,-,105,1427,7,1,341.4,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Amon-Ra St. Brown WR - DET,16,-,-,-,36,-,111,1285,7,1,338.6,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Garrett Wilson WR - NYJ,16,-,-,-,31,-,99,1256,8,1,323.2,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+A.J. Brown WR - PHI,16,-,-,-,6,-,89,1351,8,1,315.2,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Puka Nacua WR - LAR,16,-,-,-,42,-,94,1256,7,1,310.8,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Chris Olave WR - NO View News,16,-,-,-,5,-,88,1176,6,1,284.1,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Davante Adams WR - LV,16,-,-,-,5,-,89,1099,7,1,283.9,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Drake London WR - ATL,16,-,-,-,11,-,86,1121,7,1,282.2,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Cooper Kupp WR - LAR,16,-,-,-,25,-,88,1052,7,1,279.7,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Nico Collins WR - HOU,16,-,-,-,10,-,78,1121,7,1,270.1,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Mike Evans WR - TB,16,-,-,-,5,-,73,1108,8,1,266.8,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Deebo Samuel Sr. WR - SF,15,-,-,-,238,3,63,895,6,1,259.8,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Brandon Aiyuk WR - SF,16,-,-,-,5,-,76,1113,7,1,265.8,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+DeVonta Smith WR - PHI,16,-,-,-,6,-,87,1062,6,1,271.3,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Marvin Harrison Jr. WR - ARI,16,-,-,-,7,-,79,1077,7,1,266.9,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+DK Metcalf WR - SEA,16,-,-,-,5,-,74,1059,8,1,263.4,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Jaylen Waddle WR - MIA,16,-,-,-,19,-,80,1099,6,1,265.8,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Amari Cooper WR - CLE,16,-,-,-,5,-,75,1102,7,1,263.2,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+DJ Moore WR - CHI,16,-,-,-,24,-,76,1064,7,1,262.8,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Tank Dell WR - HOU,16,-,-,-,67,-,78,995,6,1,257.2,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Stefon Diggs WR - HOU,16,-,-,-,5,-,80,976,7,1,258.1,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Christian Kirk WR - JAX,16,-,-,-,11,-,80,1022,6,1,257.3,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Tee Higgins WR - CIN,16,-,-,-,5,-,73,1034,7,1,253.4,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Chris Godwin WR - TB,16,-,-,-,26,-,87,980,5,1,259.1,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Michael Pittman WR - IND,16,-,-,-,5,-,88,985,5,1,259.0,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Malik Nabers WR - NYG,16,-,-,-,15,-,76,1031,6,1,252.6,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Zay Flowers WR - BAL,16,-,-,-,51,-,81,932,6,1,253.8,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+George Pickens WR - PIT,16,-,-,-,10,-,71,1072,6,1,248.7,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Keenan Allen WR - CHI,15,-,-,-,11,-,84,933,6,1,254.4,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Calvin Ridley WR - TEN,16,-,-,-,34,-,72,979,6,1,243.3,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Terry McLaurin WR - WAS,16,-,-,-,6,-,75,998,5,1,240.9,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Rashee Rice WR - KC,14,-,-,-,9,-,81,873,6,1,243.7,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Rome Odunze WR - CHI,16,-,-,-,7,-,71,961,6,1,237.3,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Jayden Reed WR - GB,16,-,-,-,76,1,71,886,5,1,236.7,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Jordan Addison WR - MIN,15,-,-,-,18,-,69,961,6,1,235.4,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Marquise Brown WR - KC View News,16,-,-,-,15,-,65,913,6,1,224.3,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+DeAndre Hopkins WR - TEN,15,-,-,-,9,-,68,867,5,1,217.6,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Diontae Johnson WR - CAR,16,-,-,-,13,-,78,817,4,1,222.0,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Ladd McConkey WR - LAC View News,16,-,-,-,11,-,64,780,6,-,211.1,WR,NFL,https://fantasy.nfl.com/research/projections?position=3&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True

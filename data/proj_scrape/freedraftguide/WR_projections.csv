@@ -1,4 +1,4 @@
-player,team,pos,source,source_url,rec,rec_yds,rec_td,rush_att,rush_yds,rush_td,fpts
+player,team,pos,source,source_url,rec,rec_yd,rec_td,rush_att,rush_yd,rush_td,fpts
 CeeDee Lamb,DAL,WR,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=2,121,1573,13,3,22,0,298.0
 Justin Jefferson,MIN,WR,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=2,118,1770,10,2,13,0,297.3
 Tyreek Hill,MIA,WR,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=2,114,1607,11,7,44,0,288.1

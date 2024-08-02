@@ -1,43 +1,43 @@
-player,gp,rush_yd,rush_td,rec_rcpt,rec_yd,rec_td,fumbles,fpts
-Travis Kelce,16,4,-,80,847,7,1,245.1
-Sam LaPorta,16,-,-,81,839,7,1,245.4
-Mark Andrews,16,-,-,68,864,7,1,228.4
-Trey McBride,16,-,-,80,820,5,1,230.0
-George Kittle,16,5,-,65,888,6,1,220.8
-Dalton Kincaid,16,-,-,78,805,5,1,225.5
-Kyle Pitts,16,-,-,67,829,5,1,211.4
-Jake Ferguson,16,-,-,68,711,5,1,201.1
-Evan Engram,16,-,-,73,705,4,1,202.0
-David Njoku,16,-,-,66,711,5,1,198.1
-Brock Bowers,16,-,-,62,692,5,1,190.2
-Dallas Goedert,15,-,-,65,697,4,1,189.2
-Dalton Schultz,16,-,-,61,639,5,1,183.4
-Pat Freiermuth,16,-,-,60,625,4,1,174.5
-T.J. Hockenson,13,-,-,60,618,4,1,173.8
-Cole Kmet,16,-,-,57,585,4,1,166.0
-Luke Musgrave,16,-,-,52,601,4,-,162.1
-Cade Otton,16,-,-,46,441,3,-,131.1
-Tyler Conklin,16,-,-,45,444,3,-,129.9
-Chig Okonkwo,16,4,-,44,448,3,1,127.2
-Ben Sinnott,16,-,-,41,431,3,-,122.6
-Hunter Henry,16,-,-,39,395,3,-,116.0
-Noah Fant,16,-,-,35,364,3,-,106.9
-Tucker Kraft,16,-,-,34,355,3,-,104.5
-Juwan Johnson,16,-,-,32,359,3,-,101.9
-Ja'Tavion Sanders,16,-,-,32,355,3,-,101.5
-Isaiah Likely,16,-,-,32,352,3,-,101.2
-Colby Parkinson,16,-,-,31,333,3,-,97.8
-Dawson Knox,16,-,-,29,317,3,-,93.2
-Gerald Everett,16,-,-,29,299,2,-,85.4
-Hayden Hurst,16,-,-,28,288,2,-,82.8
-Michael Mayer,16,-,-,27,287,2,-,81.2
-Jelani Woods,16,-,-,26,292,2,-,80.2
-Greg Dulcich,16,-,-,26,273,2,-,78.3
-Daniel Bellinger,16,-,-,26,263,2,-,77.3
-Zach Ertz,12,-,-,26,250,2,-,76.0
-Mike Gesicki,16,-,-,24,259,2,-,73.9
-Noah Gray,16,-,-,24,256,2,-,73.6
-Tanner Hudson,16,-,-,24,245,2,-,72.5
-Jaheim Bell,16,-,-,23,253,2,-,71.8
-Cade Stover,16,-,-,23,245,2,-,71.0
-Tyler Higbee,12,-,-,23,241,2,-,70.6
+player,gp,pass_yd,pass_td,pass_int,rush_yd,rush_td,rec_rcpt,rec_yd,rec_td,fumbles_lost,fpts,pos,source,source_url,fpts_halfppr_adjust
+Travis Kelce TE - KC,16,-,-,-,4,-,80,847,7,1,245.1,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Sam LaPorta TE - DET,16,-,-,-,-,-,81,839,7,1,245.4,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Mark Andrews TE - BAL,16,-,-,-,-,-,68,864,7,1,228.4,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Trey McBride TE - ARI,16,-,-,-,-,-,80,820,5,1,230.0,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+George Kittle TE - SF,16,-,-,-,5,-,65,888,6,1,220.8,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Dalton Kincaid TE - BUF,16,-,-,-,-,-,78,805,5,1,225.5,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Kyle Pitts TE - ATL,16,-,-,-,-,-,67,829,5,1,211.4,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Jake Ferguson TE - DAL,16,-,-,-,-,-,68,711,5,1,201.1,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Evan Engram TE - JAX,16,-,-,-,-,-,73,705,4,1,202.0,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+David Njoku TE - CLE,16,-,-,-,-,-,66,711,5,1,198.1,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Brock Bowers TE - LV,16,-,-,-,-,-,62,692,5,1,190.2,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Dallas Goedert TE - PHI,15,-,-,-,-,-,65,697,4,1,189.2,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Dalton Schultz TE - HOU,16,-,-,-,-,-,61,639,5,1,183.4,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Pat Freiermuth TE - PIT,16,-,-,-,-,-,60,625,4,1,174.5,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+T.J. Hockenson TE - MIN PUP,13,-,-,-,-,-,60,618,4,1,173.8,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Cole Kmet TE - CHI,16,-,-,-,-,-,57,585,4,1,166.0,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Luke Musgrave TE - GB,16,-,-,-,-,-,52,601,4,-,162.1,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Cade Otton TE - TB,16,-,-,-,-,-,46,441,3,-,131.1,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Tyler Conklin TE - NYJ,16,-,-,-,-,-,45,444,3,-,129.9,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Chig Okonkwo TE - TEN,16,-,-,-,4,-,44,448,3,1,127.2,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Ben Sinnott TE - WAS,16,-,-,-,-,-,41,431,3,-,122.6,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Hunter Henry TE - NE,16,-,-,-,-,-,39,395,3,-,116.0,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Noah Fant TE - SEA,16,-,-,-,-,-,35,364,3,-,106.9,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Tucker Kraft TE - GB PUP View News,16,-,-,-,-,-,34,355,3,-,104.5,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Juwan Johnson TE - NO PUP View News,16,-,-,-,-,-,32,359,3,-,101.9,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Ja'Tavion Sanders TE - CAR,16,-,-,-,-,-,32,355,3,-,101.5,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Isaiah Likely TE - BAL,16,-,-,-,-,-,32,352,3,-,101.2,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Colby Parkinson TE - LAR,16,-,-,-,-,-,31,333,3,-,97.8,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Dawson Knox TE - BUF,16,-,-,-,-,-,29,317,3,-,93.2,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Gerald Everett TE - CHI,16,-,-,-,-,-,29,299,2,-,85.4,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Hayden Hurst TE - LAC,16,-,-,-,-,-,28,288,2,-,82.8,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Michael Mayer TE - LV,16,-,-,-,-,-,27,287,2,-,81.2,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Jelani Woods TE - IND,16,-,-,-,-,-,26,292,2,-,80.2,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Greg Dulcich TE - DEN,16,-,-,-,-,-,26,273,2,-,78.3,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Daniel Bellinger TE - NYG,16,-,-,-,-,-,26,263,2,-,77.3,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Zach Ertz TE - WAS,12,-,-,-,-,-,26,250,2,-,76.0,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Mike Gesicki TE - CIN,16,-,-,-,-,-,24,259,2,-,73.9,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Noah Gray TE - KC,16,-,-,-,-,-,24,256,2,-,73.6,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Tanner Hudson TE - CIN,16,-,-,-,-,-,24,245,2,-,72.5,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Jaheim Bell TE - NE,16,-,-,-,-,-,23,253,2,-,71.8,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Cade Stover TE - HOU,16,-,-,-,-,-,23,245,2,-,71.0,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True
+Tyler Higbee TE - LAR PUP,12,-,-,-,-,-,23,241,2,-,70.6,TE,NFL,https://fantasy.nfl.com/research/projections?position=4&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,True

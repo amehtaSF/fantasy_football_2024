@@ -1,4 +1,4 @@
-player,team,pos,source,source_url,pts_allow,yds_allow,def_sacks,def_ints,def_fum_rec
+player,team,pos,source,source_url,pts_allow,yds_allow,def_sack,def_int,def_fum_rec
 Dallas Cowboys,DAL,DEF,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=5,687,5046,59,15,15
 Baltimore Ravens,BAL,DEF,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=5,338,4648,54,16,14
 Buffalo Bills,BUF,DEF,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=5,365,5164,55,15,17

@@ -1,4 +1,4 @@
-player,team,pos,source,source_url,pat,fg,fg_att,fpts
+player,team,pos,source,source_url,xp_made,fg_made,fg_att,fpts
 Brandon Aubrey,DAL,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,44,34,37,146
 Justin Tucker,BAL,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,41,34,39,143
 Harrison Butker,KC,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,40,33,36,139
@@ -34,7 +34,7 @@ Joey Slye,NE,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guid
 Anders Carlson,GB,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,29,26,31,107
 Chad Ryland,NE,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,29,24,29,101
 John Parker Romo,MIN,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,21,15,18,66
-Riley Patterson,JAX,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,19,12,14,55
+Riley Patterson,WAS,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,19,12,14,55
 Cade York,CLE,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,9,5,6,24
 Mason Crosby,NYG,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,7,3,4,16
 Brett Maher,LAR,K,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,6,3,4,15

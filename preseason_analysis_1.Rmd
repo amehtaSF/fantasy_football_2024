@@ -82,9 +82,10 @@ ffa_2024_scrape <- scrape_data(
 )
 ffa_2024_proj <- projections_table(ffa_2024_scrape) %>%
   add_ecr() %>% 
-  add_risk() %>%
+  # add_risk() %>%  # could not find function "add_risk"
   add_adp() %>% 
-  add_aav()
+  add_aav() %>% 
+  add_player_info()
 
 ```
 

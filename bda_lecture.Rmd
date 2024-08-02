@@ -1,0 +1,128 @@
+---
+title: "Analysis"
+author: "Ashish"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    number_sections: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    theme: paper
+---
+
+Preproc
+===
+```{r}
+rm(list=ls())
+library(ffanalytics)
+library(yaml)
+library(tidyverse)
+library(tidylog)
+```
+
+```{r}
+config <- read_yaml("config.yaml")
+```
+
+```{r}
+name_format <- function(name){
+  name <- tolower(name)
+  name <- str_replace_all(name, " ", "_")
+  name
+}
+```
+
+
+Read in sleeper
+```{r}
+ALL_PLAYERS_CSV <- config$files$sleeper$all_players_csv
+
+cols <- c("full_name", "team", "position", "positional_rank", "adp", "adp_date", "first_name","last_name", "status",  "injury_start_date", "injury_notes","sleeper_id", "age", "practice_participation", "depth_chart_order", "fantasy_positions","number", "team_abbr",   "rank_int")
+
+df_sleeper_players_raw <- read_csv(ALL_PLAYERS_CSV)
+
+df_sleeper_players <- df_sleeper_players_raw %>% 
+  select(one_of(cols)) %>% 
+  mutate(full_name = name_format(full_name))
+```
+
+Read in fantasydata
+```{r}
+FANTASYDATA_CSV <- config$files$fantasydata$fpts_all_ssns
+
+df_fantasydata_raw <- read_csv(FANTASYDATA_CSV)
+
+df_fantasydata <- df_fantasydata_raw %>% 
+  mutate(full_name = name_format(name)) %>% 
+  select(-name)
+
+df_fd_reg <- df_fantasydata %>% 
+  filter(ssn_type == "REG")
+
+df_fd_reg2023 <- df_fd_reg %>% 
+  filter(year == "2023")
+
+df_fd_fpts_3yrs <- df_fantasydata %>% 
+  filter(year %in% c("2021", "2022", "2023")) %>% 
+  select(full_name, season, fpts, fpts_per_game) %>% 
+  pivot_wider(names_from = season, values_from = c(fpts, fpts_per_game))
+```
+
+Scraping with ffanalytics
+===
+```{r}
+ffa_2024_scrape <- scrape_data(
+  src = c("CBS", "ESPN", "FantasyPros", "FantasySharks", "FFToday", "FleaFlicker",
+    "NumberFire", "FantasyFootballNerd", "NFL", "RTSports", "Walterfootball"),
+  pos = c("QB", "RB", "WR", "TE", "K", "DST"),
+  season = 2024,
+  week = 0
+)
+ffa_2024_proj <- projections_table(ffa_2024_scrape) %>%
+  add_ecr() %>% 
+  # add_risk() %>%  # could not find function "add_risk"
+  add_adp() %>% 
+  add_aav() %>% 
+  add_player_info()
+
+```
+
+
+
+Combining sleeper and fantasydata
+===
+```{r}
+d <- df_sleeper_players %>% 
+  filter(!full_name %in% df_fd_fpts_3yrs$full_name)
+view(d)
+df_sleeper_players$full_name %in% df_fd_reg2023$full_name
+```
+
+
+Explore history
+===
+```{r}
+
+```
+
+
+
+Positional scarcity
+===
+```{r}
+
+
+```
+
+
+
+Historical player data
+===
+
+
+
+
+Historical manager analysis
+===

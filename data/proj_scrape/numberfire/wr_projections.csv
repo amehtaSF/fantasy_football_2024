@@ -4,7 +4,7 @@ fpts,fpts_ci,rank_overall,rank_pos,rush_att,rush_yd,rush_td,rec_rcpt,rec_tgt,rec
 265.70000000000005,177.51-238.71,#43,#3,4.38,24.7,0.19,115.18,171.44,1383.53,11.26,Ja'Marr Chase,CIN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 258.565,171.02-231,#46,#4,2.34,13.42,0.15,115.11,171.25,1474.42,8.64,Amon-Ra St. Brown,DET,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 249.11,166.44-225.56,#50,#5,0.0,0.0,0.0,106.22,175.22,1416.72,9.08,Justin Jefferson,MIN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-242.965,162.2-220.52,#51,#6,0.0,0.0,0.0,103.21,162.7,1397.87,8.87,A.,PHI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+242.965,162.2-220.52,#51,#6,0.0,0.0,0.0,103.21,162.7,1397.87,8.87,A.J. Brown,PHI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 241.925,160.28-218.26,#52,#7,4.63,26.41,0.2,105.31,166.78,1363.7,8.25,Puka Nacua,LA,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 225.79999999999998,145.7-200.94,#57,#8,7.13,40.35,0.24,104.96,159.92,1182.59,8.61,Garrett Wilson,NYJ,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 220.65499999999997,144.16-199.12,#59,#9,0.0,0.0,0.0,98.03,151.14,1233.23,8.28,Drake London,ATL,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
@@ -17,8 +17,8 @@ fpts,fpts_ci,rank_overall,rank_pos,rush_att,rush_yd,rush_td,rec_rcpt,rec_tgt,rec
 202.72,131.42-184,#71,#16,4.63,26.26,0.2,90.02,140.46,1093.5,7.51,Cooper Kupp,LA,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 194.585,131.07-183.59,#72,#17,29.75,172.4,2.03,74.51,121.28,887.28,6.88,Deebo Samuel,SF,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 202.835,130.54-182.96,#73,#18,0.0,0.0,0.0,92.17,145.85,1133.8,7.33,DeVonta Smith,PHI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-192.17000000000002,127.08-178.86,#75,#19,0.0,0.0,0.0,78.4,136.07,1098.27,7.3,D.,SEA,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-194.67,125.7-177.2,#78,#20,0.0,0.0,0.0,86.44,142.54,1139.93,6.24,D.,CHI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+192.17000000000002,127.08-178.86,#75,#19,0.0,0.0,0.0,78.4,136.07,1098.27,7.3,D.K. Metcalf,SEA,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+194.67,125.7-177.2,#78,#20,0.0,0.0,0.0,86.44,142.54,1139.93,6.24,D.J. Moore,CHI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 192.29500000000002,125.68-177.18,#79,#21,0.0,0.0,0.0,81.73,130.05,1077.24,7.32,Tee Higgins,CIN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 195.14,124.75-176.09,#80,#22,0.0,0.0,0.0,89.44,148.4,1069.55,7.26,Davante Adams,LV,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 190.16,121.74-172.52,#82,#23,4.49,25.09,0.17,86.06,130.38,1019.62,7.12,Stefon Diggs,HOU,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
@@ -76,7 +76,7 @@ fpts,fpts_ci,rank_overall,rank_pos,rush_att,rush_yd,rush_td,rec_rcpt,rec_tgt,rec
 86.305,47.75-84.71,#183,#75,0.0,0.0,0.0,40.15,65.94,487.61,2.96,Adonai Mitchell,IND,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 90.385,47.09-83.91,#186,#76,8.66,49.22,0.44,49.77,75.09,443.81,2.28,Wan'Dale Robinson,NYG,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 83.61500000000001,45.58-82.12,#187,#77,0.0,0.0,0.0,39.53,64.68,443.14,3.39,Ricky Pearsall,SF,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-80.45,45.41-81.93,#188,#78,0.0,0.0,0.0,33.56,60.7,484.35,2.58,D.,LAC,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+80.45,45.41-81.93,#188,#78,0.0,0.0,0.0,33.56,60.7,484.35,2.58,DJ Chark,LAC,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 84.095,45-81.46,#190,#79,0.0,0.0,0.0,41.73,70.48,499.95,2.33,Luke McCaffrey,WSH,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 79.13499999999999,42.85-78.89,#195,#80,0.0,0.0,0.0,36.53,63.36,477.34,2.26,Tim Patrick,DEN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 80.965,42.78-78.82,#196,#81,0.0,0.0,0.0,40.33,60.76,506.82,1.81,Kendrick Bourne,NE,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
@@ -104,14 +104,14 @@ fpts,fpts_ci,rank_overall,rank_pos,rush_att,rush_yd,rush_td,rec_rcpt,rec_tgt,rec
 48.255,20.39-52.25,#245,#103,0.0,0.0,0.0,23.87,39.28,264.84,1.73,Calvin Austin III,PIT,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 44.0,18.17-49.61,#247,#104,0.0,0.0,0.0,20.22,34.67,268.46,1.22,Treylon Burks,TEN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 46.14,17.89-49.27,#249,#105,2.48,14.31,0.11,25.12,40.23,243.94,1.27,Greg Dortch,ARI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-44.415,17.47-48.77,#250,#106,0.0,0.0,0.0,22.59,36.97,270.39,1.08,K.,NE,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+44.415,17.47-48.77,#250,#106,0.0,0.0,0.0,22.59,36.97,270.39,1.08,K.J. Osborn,NE,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 42.075,17.4-48.68,#251,#107,0.0,0.0,0.0,18.07,28.49,246.73,1.45,Khadarel Hodge,ATL,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 40.470000000000006,16.98-48.2,#253,#108,4.58,26.07,0.24,15.76,27.16,194.3,1.66,KaVontae Turpin,DAL,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 40.205,16.41-47.51,#254,#109,2.31,13.1,0.15,16.49,29.27,219.73,1.4,Tutu Atwell,LA,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 40.775,15.68-46.64,#255,#110,0.0,0.0,0.0,19.23,32.52,209.83,1.79,Andrei Iosivas,CIN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 40.765,14.73-45.53,#256,#111,0.0,0.0,0.0,21.27,31.69,249.94,0.93,JuJu Smith-Schuster,NE,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 38.76,13.54-44.1,#258,#112,0.0,0.0,0.0,19.88,35.25,227.63,1.04,Jonathan Mingo,CAR,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-34.53,11.43-41.61,#261,#113,0.0,0.0,0.0,16.02,25.72,201.87,1.1,A.,NO,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+34.53,11.43-41.61,#261,#113,0.0,0.0,0.0,16.02,25.72,201.87,1.1,A.T. Perry,NO,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 35.12,11.08-41.18,#262,#114,0.0,0.0,0.0,17.98,29.75,190.41,1.27,Parker Washington,JAC,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 30.265,8.65-38.31,#265,#115,0.0,0.0,0.0,13.57,21.04,187.46,0.92,Kalif Raymond,DET,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 26.53,5.99-35.15,#272,#116,0.0,0.0,0.0,11.92,19.31,144.9,0.99,Allen Lazard,NYJ,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
@@ -145,7 +145,7 @@ fpts,fpts_ci,rank_overall,rank_pos,rush_att,rush_yd,rush_td,rec_rcpt,rec_tgt,rec
 11.21,-4.93-22.19,#334,#144,0.0,0.0,0.0,5.16,8.81,69.04,0.32,Damiere Byrd,WSH,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 12.115,-4.99-22.13,#335,#145,0.0,0.0,0.0,7.09,10.72,64.51,0.35,Allen Robinson,NYG,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 10.094999999999999,-5.61-21.39,#338,#146,0.0,0.0,0.0,4.41,7.93,60.74,0.33,Jalen Guyton,LV,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-9.524999999999999,-6.29-20.57,#343,#147,0.0,0.0,0.0,4.77,8.12,58.27,0.19,Terrace Marshall Jr.,CAR,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+9.524999999999999,-6.29-20.57,#343,#147,0.0,0.0,0.0,4.77,8.12,58.27,0.19,Terrace Marshall,CAR,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 8.96,-6.35-20.49,#344,#148,2.17,12.31,0.11,3.78,5.77,38.27,0.22,Laviska Shenault,SEA,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 9.469999999999999,-6.53-20.29,#347,#149,0.0,0.0,0.0,5.18,8.42,50.82,0.34,Parris Campbell,PHI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 8.41,-6.91-19.85,#351,#150,0.0,0.0,0.0,3.88,6.01,46.01,0.34,Mecole Hardman,KC,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
@@ -159,9 +159,9 @@ fpts,fpts_ci,rank_overall,rank_pos,rush_att,rush_yd,rush_td,rec_rcpt,rec_tgt,rec
 7.01,-7.8-18.8,#363,#158,0.0,0.0,0.0,3.02,5.34,42.09,0.17,Nick Westbrook-Ikhine,TEN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 7.265000000000001,-7.82-18.78,#365,#159,0.0,0.0,0.0,3.57,5.93,40.27,0.22,Robert Woods,HOU,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 7.16,-7.83-18.75,#366,#160,0.0,0.0,0.0,3.4,5.77,39.78,0.26,Dareke Young,SEA,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-7.140000000000001,-7.85-18.73,#367,#161,0.0,0.0,0.0,3.4,5.77,39.52,0.26,Easop Winston Jr.,SEA,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+7.140000000000001,-7.85-18.73,#367,#161,0.0,0.0,0.0,3.4,5.77,39.52,0.26,Easop Winston Jr.  E. Winston Jr.,SEA,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 7.04,-7.92-18.64,#369,#162,0.0,0.0,0.0,3.36,5.94,39.83,0.2,Denzel Mims,JAC,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-6.805,-8.05-18.49,#371,#163,0.0,0.0,0.0,3.17,5.47,37.48,0.25,D.,IND,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+6.805,-8.05-18.49,#371,#163,0.0,0.0,0.0,3.17,5.47,37.48,0.25,D.J. Montgomery,IND,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 6.68,-8.06-18.48,#373,#164,0.0,0.0,0.0,2.94,5.04,37.37,0.23,Tylan Wallace,BAL,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 6.824999999999999,-8.13-18.41,#375,#165,0.0,0.0,0.0,3.37,5.89,39.45,0.18,Dax Milne,WSH,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 6.725,-8.14-18.4,#377,#166,0.0,0.0,0.0,3.19,5.94,38.15,0.18,Jalen Nailor,MIN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
@@ -181,7 +181,7 @@ fpts,fpts_ci,rank_overall,rank_pos,rush_att,rush_yd,rush_td,rec_rcpt,rec_tgt,rec
 4.4,-9.64-16.58,#421,#180,0.0,0.0,0.0,1.86,3.01,24.4,0.17,Tre'Quan Smith,DET,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 4.53,-9.66-16.58,#423,#181,0.0,0.0,0.0,2.14,3.71,25.15,0.19,Jaelon Darden,CLE,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 4.265,-9.74-16.46,#430,#182,0.0,0.0,0.0,1.81,3.11,23.33,0.17,Andy Isabella,BUF,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-4.24,-9.74-16.46,#430,#182,0.0,0.0,0.0,1.76,3.11,23.58,0.17,K.,BUF,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+4.24,-9.74-16.46,#430,#182,0.0,0.0,0.0,1.76,3.11,23.58,0.17,K.J. Hamler,BUF,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 4.07,-9.92-16.28,#445,#184,0.0,0.0,0.0,1.78,2.85,22.05,0.17,Austin Mack,ATL,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.93,-10-16.16,#452,#185,0.0,0.0,0.0,1.7,3.01,22.18,0.17,Tom Kennedy,DET,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.905,-10.02-16.12,#455,#186,0.0,0.0,0.0,1.71,3.01,21.99,0.17,Daurice Fountain,DET,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
@@ -191,12 +191,12 @@ fpts,fpts_ci,rank_overall,rank_pos,rush_att,rush_yd,rush_td,rec_rcpt,rec_tgt,rec
 3.8400000000000003,-10.08-16.06,#460,#190,0.0,0.0,0.0,1.7,2.97,21.22,0.17,Samori Toure,GB,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.81,-10.09-16.05,#461,#191,0.0,0.0,0.0,1.66,2.85,20.89,0.17,Dante Pettis,CHI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.835,-10.09-16.05,#461,#191,0.0,0.0,0.0,1.71,2.96,21.64,0.17,John Metchie III,HOU,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-3.8150000000000004,-10.11-16.05,#464,#193,0.0,0.0,0.0,1.69,2.87,22.36,0.17,Equanimeous St. Brown,NO,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+3.8150000000000004,-10.11-16.05,#464,#193,0.0,0.0,0.0,1.69,2.87,22.36,0.17,Equanimeous St. Brown  E. St. Brown,NO,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.8600000000000003,-10.1-16.04,#464,#193,0.0,0.0,0.0,1.78,3.02,21.18,0.17,Montrell Washington,KC,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.8800000000000003,-10.12-16.02,#469,#195,0.0,0.0,0.0,1.86,2.97,21.28,0.17,Malik Heath,GB,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.77,-10.16-15.98,#472,#196,0.0,0.0,0.0,1.72,2.96,19.89,0.17,Shedrick Jackson,CIN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.775,-10.17-15.97,#473,#197,0.0,0.0,0.0,1.75,2.96,19.84,0.17,Charlie Jones,CIN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-3.7649999999999997,-10.17-15.97,#473,#197,0.0,0.0,0.0,1.73,2.96,19.86,0.17,Kwamie Lassiter II,CIN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+3.7649999999999997,-10.17-15.97,#473,#197,0.0,0.0,0.0,1.73,2.96,19.86,0.17,Kwamie Lassiter II  K. Lassiter II,CIN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.7800000000000002,-10.2-15.94,#475,#199,0.0,0.0,0.0,1.82,2.96,20.68,0.17,Ben Skowronek,HOU,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.705,-10.21-15.93,#476,#200,0.0,0.0,0.0,1.69,2.85,20.21,0.17,Collin Johnson,CHI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.6449999999999996,-10.27-15.87,#478,#201,0.0,0.0,0.0,1.69,2.85,19.81,0.17,Velus Jones,CHI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
@@ -210,7 +210,7 @@ fpts,fpts_ci,rank_overall,rank_pos,rush_att,rush_yd,rush_td,rec_rcpt,rec_tgt,rec
 3.515,-10.32-15.8,#487,#208,0.0,0.0,0.0,1.55,2.71,17.86,0.17,Ronnie Bell,SF,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.5549999999999997,-10.34-15.8,#489,#210,0.0,0.0,0.0,1.65,2.84,19.59,0.17,Rakim Jarrett,TB,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.565,-10.34-15.8,#489,#210,0.0,0.0,0.0,1.67,2.84,19.57,0.17,Cephus Johnson,TB,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-3.5549999999999997,-10.35-15.77,#492,#212,0.0,0.0,0.0,1.69,2.87,19.58,0.17,Stanley Morgan Jr.,NO,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+3.5549999999999997,-10.35-15.77,#492,#212,0.0,0.0,0.0,1.69,2.87,19.58,0.17,Stanley Morgan Jr.  S. Morgan Jr.,NO,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.6,-10.35-15.77,#492,#212,0.0,0.0,0.0,1.78,2.97,19.88,0.17,Seth Williams,JAC,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.595,-10.36-15.76,#496,#214,0.0,0.0,0.0,1.79,2.97,19.65,0.17,Elijah Cooks,JAC,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.54,-10.37-15.75,#497,#215,0.0,0.0,0.0,1.7,2.89,19.49,0.17,Cody White,SEA,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
@@ -223,7 +223,7 @@ fpts,fpts_ci,rank_overall,rank_pos,rush_att,rush_yd,rush_td,rec_rcpt,rec_tgt,rec
 3.48,-10.45-15.65,#509,#222,0.0,0.0,0.0,1.76,2.89,19.3,0.17,Derius Davis,LAC,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.345,-10.46-15.62,#512,#223,0.0,0.0,0.0,1.53,2.73,18.44,0.17,Tyrie Cleveland,IND,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.3449999999999998,-10.49-15.59,#515,#224,0.0,0.0,0.0,1.59,2.82,18.46,0.17,Jacob Harris,PHI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
-3.3449999999999998,-10.49-15.59,#515,#224,0.0,0.0,0.0,1.59,2.76,18.74,0.17,Michael Woods II,CLE,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
+3.3449999999999998,-10.49-15.59,#515,#224,0.0,0.0,0.0,1.59,2.76,18.74,0.17,Michael Woods II  M. Woods II,CLE,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.29,-10.5-15.56,#517,#226,0.0,0.0,0.0,1.52,2.67,19.25,0.17,Mason Kinsey,TEN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.3249999999999997,-10.5-15.56,#517,#226,0.0,0.0,0.0,1.59,2.82,18.46,0.17,Britain Covey,PHI,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True
 3.2849999999999997,-10.5-15.56,#517,#226,0.0,0.0,0.0,1.51,2.67,19.24,0.17,Colton Dowell,TEN,wr,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/wr,True

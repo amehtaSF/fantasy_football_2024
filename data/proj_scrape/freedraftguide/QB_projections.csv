@@ -1,4 +1,4 @@
-player,team,pos,source,source_url,pass_comp,pass_att,pass_yds,pass_td,pass_int,rush_att,rush_yds,rush_td,fpts
+player,team,pos,source,source_url,pass_cmp,pass_att,pass_yd,pass_td,pass_int,rush_att,rush_yd,rush_td,fpts
 Josh Allen,BUF,QB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=0,404,0,4509,33,14,107,593,10,462.75
 Jalen Hurts,PHI,QB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=0,354,0,4025,25,12,152,671,13,434.35
 Patrick Mahomes,KC,QB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=0,431,0,4827,38,11,69,361,2,430.45
@@ -29,7 +29,7 @@ Russell Wilson,PIT,QB,FreeDraftGuide,https://www.freedraftguide.com/football/dra
 J.J. McCarthy,MIN,QB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=0,343,0,3662,24,9,33,121,1,288.2
 Bryce Young,CAR,QB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=0,348,0,3374,19,10,49,297,2,276.4
 Bo Nix,DEN,QB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=0,288,0,3021,19,9,35,154,1,239.45
-Gardner Minshew II,LV,QB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=0,244,0,2731,14,7,20,81,1,199.65
+Gardner Minshew,LV,QB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=0,244,0,2731,14,7,20,81,1,199.65
 Jacoby Brissett,NE,QB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=0,211,0,2419,16,6,30,133,1,198.25
 Justin Fields,PIT,QB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=0,129,0,1316,8,4,81,478,5,171.6
 Drake Maye,NE,QB,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=0,117,0,1341,5,2,12,59,1,96.95

@@ -1,9 +1,9 @@
-player,team,pos,source,source_url,rec,rec_yds,rec_td,rush_att,rush_yds,rush_td,fpts
+player,team,pos,source,source_url,rec,rec_yd,rec_td,rush_att,rush_yd,rush_td,fpts
 Sam LaPorta,DET,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,93,958,9,0,0,0,196.3
 Travis Kelce,KC,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,88,950,8,0,0,0,187.0
+Dalton Kincaid,BUF,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,91,982,7,0,0,0,185.7
 Mark Andrews,BAL,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,79,988,8,0,0,0,186.3
 Trey McBride,ARI,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,92,948,6,0,0,0,176.8
-Dalton Kincaid,BUF,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,91,937,6,0,0,0,175.2
 George Kittle,SF,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,72,994,7,1,4,0,177.4
 Kyle Pitts,ATL,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,77,978,6,0,0,0,172.3
 Evan Engram,JAX,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,91,873,5,0,0,0,162.8
@@ -98,4 +98,4 @@ Stephen Sullivan,CAR,TE,FreeDraftGuide,https://www.freedraftguide.com/football/d
 Devin Culp,TB,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,7,79,1,0,0,0,17.4
 Peyton Hendershot,DAL,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,10,94,0,0,0,0,14.399999999999999
 Grant Calcaterra,PHI,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,9,98,0,0,0,0,14.3
-Anthony Firkser,DET,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,9,94,0,0,0,0,13.899999999999999
+Anthony Firkser,NYJ,TE,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=3,9,94,0,0,0,0,13.899999999999999
