@@ -30,21 +30,25 @@ STATE_SPACE_DIM = np.sum(list(STATE_SCHEMA.values()))
 NUM_DRAFT_ROUNDS = 15
 NUM_MGRS = 12
 
+
 def softmax(x, temperature=1.0):
     x = np.array(x)
     e_x = np.exp((x - np.max(x))/temperature)
     return e_x / e_x.sum(axis=0)
 
-
-class DraftEnv(gym.Env):
+class MARLDraftEnv(gym.Env):
     """Custom Environment that follows gym interface"""
     metadata = {'render.modes': ['human']}
     
-    def __init__(self, stochastic_temp):
-        super(DraftEnv, self).__init__()
+    # i'm gonna need to set up a system where there is a dummy round at the end of the draft
+    # and then the reward is calculated for that round
+    # for that i will need to modify increment_turn, step,
+    def __init__(self):
+        super(MARLDraftEnv, self).__init__()
         
+
         df_players = self._make_players_df()
-        self.stochastic_temp = stochastic_temp
+        self.dummy_round = False # indicates if the round is a dummy round
         self.action_space = spaces.Discrete(ACTION_SPACE_DIM)
         self.actions = {0: "QB", 1: "RB", 2: "WR", 3: "TE", 4: "K", 5: "DEF"} 
         self.observation_space = spaces.Box(low=-np.inf, high=np.inf, shape=(STATE_SPACE_DIM,), dtype=np.float32)
@@ -52,9 +56,10 @@ class DraftEnv(gym.Env):
       
         self.cur_turn = 0  # increments from 0 to NUM_MGRS * NUM_DRAFT_ROUNDS - 1, indexes self.draft to get the current manager
         self.cur_round = 0  # increments from 0 to NUM_DRAFT_ROUNDS - 1
+        self.cur_mgr = 0  # current manager, incremented by increment turn.
         self.all_players = df_players.dropna(subset=["mean", "std"]).copy()  # all players
-        # penalize defense 
-        self.all_players.loc[self.all_players["position"] == "DEF", "mean"] = self.all_players.loc[self.all_players["position"] == "DEF", "mean"] - 2
+        # penalize defense bc i don't want them drafted too early
+        self.all_players.loc[self.all_players["position"] == "DEF", "mean"] = self.all_players.loc[self.all_players["position"] == "DEF", "mean"] - 15
         self.all_players["mean"] = self.all_players["mean"] / self.all_players["mean"].max() # scale points
         self.all_players = self.all_players.sort_values(by="mean", ascending=False).reset_index(drop=True)
         
@@ -243,6 +248,7 @@ class DraftEnv(gym.Env):
         self.draft = self._make_empty_draft()
         self.cur_round = 0
         self.cur_turn = 0
+        self.dummy_round = False
         self.open_players = self.all_players.copy()
         
         
@@ -301,7 +307,7 @@ class DraftEnv(gym.Env):
             }).reset_index(drop=True)
         return rankings
     
-    def calc_reward(self, mgr_num: int, round: int) -> float:
+    def calc_reward(self, mgr_num: int) -> float:
         
         '''
         Calculate the reward for a manager's choice 
@@ -310,14 +316,6 @@ class DraftEnv(gym.Env):
         i.e. if they drafted a starter
         
         '''
-
-        # print(f'mgr_num: {mgr_num}; round: {self.cur_round}')
-
-        team = self.get_team(mgr_num).copy()
-        round_choice = team.loc[team["round"] == round]
-        # print(f'round_choice: {round_choice}')
-
-        team = team.sort_values(by=self.objective, ascending=False).reset_index(drop=True)
         
         starters = self.get_starters(mgr_num)
         bench = self.get_bench(mgr_num)
@@ -326,63 +324,26 @@ class DraftEnv(gym.Env):
         bench_sum = bench[self.objective].sum()
         
         starter_ids = starters["sleeper_id"].values
-        round_choice_id = round_choice["sleeper_id"].values[0]
-        chose_starter = round_choice_id in starter_ids 
+
+
         reward = 0
-        # if self.is_starters_filled(mgr_num):
-        #     reward = starters_sum + bench_sum
-        #     # reward = starters_sum
+        if self.is_starters_filled(mgr_num):
+            reward = starters_sum + .2*bench_sum
+            # reward = starters_sum
+        else:
+            reward = -.5
             
-        # -- rewards if the team is not full -- #
-        # give a small reward if they draft a starter
-        # if self.cur_round < (NUM_DRAFT_ROUNDS - 1) and chose_starter:
-        #     reward = round_choice[self.objective].values[0]
-        # else:
-        #     reward = 0
-        
-        if round < NUM_DRAFT_ROUNDS-1:
-            return reward
-        
-        
-        # -- rewards if final round -- #
-        if not self.is_starters_filled(mgr_num):
-            # penalize if starters are not filled
-            reward -= -1
-        if self.get_team_comp(mgr_num, flex=True)["DEF"] > 1:
-            # penalize if more than 1 DEF
-            reward -= -1
-        if self.get_team_comp(mgr_num, flex=True)["K"] > 1:
-            # penalize if more than 1 K
-            reward -= -1
-        if "K" in self.get_team(mgr_num).loc[self.get_team(mgr_num)["round"] < 12]["position"].values:
-            # penalize if K drafted before last 3 rounds (before round 12)
-            reward -= -1
-        if "DEF" in self.get_team(mgr_num).loc[self.get_team(mgr_num)["round"] < 8]["position"].values:
-            # penalize if DEF drafted before round 9
-            reward -= -1  
-        # penalize for each week starters are not filled (max of 1*.5 over 17 weeks)
-        num_incomplete_team_weeks = self.get_num_incomplete_team_weeks(mgr_num)
-        reward -= num_incomplete_team_weeks/(17*2)
-            
-        # -- reward if starters are filled and final round -- #
-        # reward primarily based on starters if starters filled
-        reward += starters_sum/10
-        # give half reward for RB and WR past starters
-        reward += (bench.loc[bench["position"].isin(["RB", "WR"])]["fp_mean"].sum())/20
-        # give half reward for up to 1 QB past starters
-        reward += (bench.loc[bench["position"].isin(["QB"])].sort_values(by="fp_mean", ascending=False).head(1)["fp_mean"].sum())/20
-        # give quarter reward for TE past starters
-        reward += (bench.loc[bench["position"].isin(["TE"])]["fp_mean"].sum())/40
-        # give a bonus if the team is in first place
-        if self.get_mgr_rankings(starters=True).iloc[0]["mgr"] == mgr_num:
+        # -- bonus for first place -- #
+        if self.get_mgr_rankings().iloc[0]["mgr"] == mgr_num:
             reward += 1
-        
+            
+        # num_incomplete_team_weeks = self.get_num_incomplete_team_weeks(mgr_num)
+        # reward -= num_incomplete_team_weeks/(17*2)
+            
         # # -- clip rewards -- #
-        reward /= 2
         # reward = np.clip(reward, a_min=-1, a_max=None).astype(np.float32).item()
             
         return reward
-    
     
     
     def get_num_incomplete_team_weeks(self, mgr_num: int) -> int:
@@ -412,24 +373,38 @@ class DraftEnv(gym.Env):
         
     
     def choose_player(self, mgr_num: int, sleeper_id: str):
-        '''updates draft and open players'''
-        assert sleeper_id in self.open_players["sleeper_id"].values
+        '''
+        updates draft by adding chosen player to and open players
+        '''
+        # identify keeper round for manager
+        keeper_round = self.keepers[mgr_num]['round']
+        
+        # If there is no player and it is not the keeper round, return None
+        if sleeper_id is None or sleeper_id not in self.open_players["sleeper_id"].values:
+            if int(keeper_round) != int(self.cur_round):
+                return None
    
+        # Get the player from the open players
         player = self.open_players.loc[self.open_players["sleeper_id"] == sleeper_id].iloc[0].to_dict()
         
-        # ignore choice and use keeper if it is the keeper round for the manager
-        keeper_round = self.keepers[mgr_num]['round']
+        
+        # Ignore choice and replace player with keeper if it is the keeper round for the manager
         if int(keeper_round) == int(self.cur_round):
             # print(f"Keeper round for mgr {mgr_num}")
             player_row = self.all_players.loc[self.all_players['sleeper_id'] == self.keepers[mgr_num]['sleeper_id']]
-            player = {
-                "sleeper_id": player_row['sleeper_id'].values[0],
-                "full_name": player_row['full_name'].values[0],
-                "team": player_row['team'].values[0],
-                "position": player_row['position'].values[0],
-                "mean": player_row['mean'].values[0],
-                "std": player_row['std'].values[0]
-            }
+            player = {}
+            for k, v in player_row.iloc[0].items():
+                if k in self.draft.columns:
+                    player[k] = v
+                    
+            # player = {
+            #     "sleeper_id": player_row['sleeper_id'].values[0],
+            #     "full_name": player_row['full_name'].values[0],
+            #     "team": player_row['team'].values[0],
+            #     "position": player_row['position'].values[0],
+            #     "mean": player_row['mean'].values[0],
+            #     "std": player_row['std'].values[0]
+            # }
         
         team_comp = self.get_team_comp(mgr_num, flex=False)
         # Indicates if the team is ready to draft a flex player, ie. rb, wr, te are filled
@@ -443,13 +418,9 @@ class DraftEnv(gym.Env):
             player["team_pos"] = player["position"]
         
         # -- Add the player to the draft -- #
-        self.draft.loc[self.cur_turn, "sleeper_id"] = str(player["sleeper_id"])
-        self.draft.loc[self.cur_turn, "full_name"] = str(player["full_name"])
-        self.draft.loc[self.cur_turn, "team"] = str(player["team"])
-        self.draft.loc[self.cur_turn, "position"] = str(player["position"])
-        self.draft.loc[self.cur_turn, "team_pos"] = str(player["team_pos"])
-        self.draft.loc[self.cur_turn, "fp_mean"] = float(player["mean"])
-        self.draft.loc[self.cur_turn, "fp_std"] = float(player["std"])
+        for k, v in player.items():
+            if k in self.draft.columns:
+                self.draft.loc[self.cur_turn, k] = v
         
         # -- Remove the player from the open players -- #
         self.open_players = self.open_players.loc[self.open_players["sleeper_id"] != sleeper_id]
@@ -464,59 +435,95 @@ class DraftEnv(gym.Env):
         
         self.cur_turn += 1
         if self.cur_turn < len(self.turns):
+            # Normal round updating
             self.cur_round = self.draft["round"].values[self.cur_turn]
-        else:
-            # even though this round doesn't exist,
-            # we need to have a valid int for the state
-            self.cur_round = NUM_DRAFT_ROUNDS
+            self.cur_mgr = self.draft["mgr"].values[self.cur_turn]
+            return True
         
-        return True
+        elif self.cur_turn == len(self.turns):
+            # start of dummy round
+            self.dummy_round = True
+            self.cur_round = NUM_DRAFT_ROUNDS
+            self.cur_mgr = 0
+            return True
+        else:
+            # continuing dummy round 
+            self.cur_mgr += 1
+
     
-    def between_turns_actions(self):
-        return
     
-    
-    def step(self, action):
+    def step(self, action, deterministic=True):
         
         cur_round = self.cur_round
         cur_turn = self.cur_turn
-        assert cur_turn < len(self.draft), "Draft is over"
+        mgr_num = self.cur_mgr
+        assert cur_turn <= len(self.draft), "Draft is over"  # added dummy round
+        # assert cur_turn < len(self.draft), "Draft is over"
         
-        mgr_num = self.draft["mgr"].values[cur_turn]
+        # -- Check if this is last pick of draft -- #
+        # terminated = True if cur_turn == len(self.draft)-1 else False
         
-        # -- Check if this is last round -- #
-        terminated = True if self.cur_round == NUM_DRAFT_ROUNDS - 1 else False
+        # -- Dummy round for finalizing rewards -- #
+        if cur_round == NUM_DRAFT_ROUNDS:
+            terminated = True if mgr_num == NUM_MGRS - 1 else False
+            truncated = False
+            reward = self.calc_reward(mgr_num)
+            info = {
+                "cur_turn": cur_turn,
+                "cur_round": cur_round,
+                "player": None,
+                "mgr_num": mgr_num,
+                "terminated": terminated,
+                "reward": reward,
+                "notes": "Draft is over"
+            }
+            return self.state, reward, terminated, truncated, info
         
-        # self.update_state()  # added this in when i was going to have the roster in the state
+        # mgr_num = self.draft["mgr"].values[cur_turn]
         
         # -- Choose the player -- #
         filtered_players = self.open_players.loc[self.open_players["position"] == self.actions[action]]
         filtered_players = filtered_players.sort_values(by="mean", ascending=False).reset_index(drop=True) 
         if not filtered_players.empty:
-            chosen_player = filtered_players.iloc[0]
+            if deterministic:
+                chosen_player = filtered_players.iloc[0]
+            else:
+                # my concern with this method is that it will make choices where the next three players have less differential
+                # a better method would be passing in the action probabilities and sampling from that
+                # w = softmax(filtered_players["mean"].values, temperature=.1)
+                # chosen_player = filtered_players.sample(weights=w).iloc[0]
+                # would be good to log and check whether these weights are good
+                raise NotImplementedError
+                
         else:
             # If no players are available for the chosen position, they get no player
-            chosen_player = {"mean": 0, "std": 0, 
-                             "sleeper_id": None, "full_name": None, 
-                             "team": None, "position": None}  # or handle the case where no player is found
-
+            chosen_player = {k: None for k in filtered_players.columns}
+            chosen_player["mean"] = 0
+            chosen_player["std"] = 0
+            
         # -- update the draft and open players -- #
+        # (player could be different if it is the keeper round)
         actual_player = self.choose_player(mgr_num, chosen_player["sleeper_id"])
+        
+        # -- determine if round is over and then calculate reward -- #
+        # if (self.cur_turn+1) % NUM_MGRS == 0:
+        
+        # -- determine if draft is over and then calculate reward -- #
+        if terminated:
+            reward = [self.calc_reward(mgr_num) for mgr_num in range(NUM_MGRS)]
+        else:
+            reward = [0 for mgr_num in range(NUM_MGRS)]
+            
         
         # -- increment the turn and round and update state vector -- #
         turn = self.cur_turn
         self.increment_turn()
         
         
-        # -- run other managers -- # 
-        self.between_turns_actions()
-        
-        
         # -- calculate reward -- #
         # NOTE THIS DOES NOT EXACTLY WORK IF NOT DOING SARL BECAUSE DRAFT IS NOT OVER WHEN THIS GETS CALLED FOR MARL
         # THAT SAID, IT KIND OF WORKS FOR MARL UNLESS SOMEONE DRAFTS STARTER IN LAST ROUND
-        reward = self.calc_reward(mgr_num, cur_round) # calculates reward without first place bonus
-        
+        # reward = self.calc_reward(mgr_num, cur_round) # calculates reward without first place bonus
         
         # -- store the draft for step output -- #
         draft = self.draft.to_dict(orient="records")
@@ -534,6 +541,7 @@ class DraftEnv(gym.Env):
         
         
         truncated = False
+        terminated = False
         
         return self.state, reward, terminated, truncated, info
     
