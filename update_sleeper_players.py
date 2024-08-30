@@ -53,7 +53,7 @@ if __name__ == "__main__":
     # get and save defense
     df_defense = df_players[df_players["position"] == "DEF"]
     df_defense["full_name"] = df_defense["first_name"] + " " + df_defense["last_name"]
-    print(df_defense["full_name"])
+    # print(df_defense["id"])
     
     # read adp file
     df_adp = pd.read_csv(config["files"]["sleeper"]["adp"])
@@ -61,13 +61,13 @@ if __name__ == "__main__":
     df_adp["Player Id"] = df_adp["Player Id"].astype(str)
     
     # get integer rank in positional_rank column
-    df_adp["rank_int"] = df_adp["Positional Rank"].str.extract("(\d+)").astype(int)
+    df_adp["rank_int"] = df_adp["Positional Rank"].str.extract("(\d+)").astype(float)
     
     # # filter to only rank_int <= 20
     # df_adp = df_adp[df_adp["rank_int"] <= 20]
     
     # filter df_players such that id is in df_adp["Player ID"]
-    df_players = df_players[df_players["id"].isin(df_adp["Player Id"].astype(str))]
+    # df_players = df_players[df_players["id"].isin(df_adp["Player Id"].astype(str))]
     
     # filter df_players to relevant positions
     positions = ["QB", "RB", "WR", "TE", "K"]
@@ -75,10 +75,23 @@ if __name__ == "__main__":
     
 
     # add Positional Rank to df_players and keep only the columns Positional Rank and Redraft Half PPR ADP
-    df_players = df_players.merge(df_adp[["Player Id", "Positional Rank", "Redraft Half PPR ADP", "Date", "rank_int"]], left_on="id", right_on="Player Id", how="left")
-    df_players.rename(columns={"Positional Rank": "positional_rank", "Redraft Half PPR ADP": "adp", "Date": "adp_date", "id": "sleeper_id"}, inplace=True)
+    df_players = df_players.merge(df_adp[["Player Id", 
+                                          "Positional Rank",
+                                          "Redraft Half PPR ADP",
+                                          "Date", 
+                                          "rank_int"]], 
+                                  left_on="id", 
+                                  right_on="Player Id",
+                                  how="left")
+    df_players.rename(columns={"Positional Rank": "positional_rank", 
+                               "Redraft Half PPR ADP": "adp", 
+                               "Date": "adp_date", 
+                               "id": "sleeper_id"}, 
+                      inplace=True)
+    df_defense.rename(columns={"id": "sleeper_id"}, inplace=True)
     
     # Add defense to data frame
     df_players = pd.concat([df_players, df_defense])
 
     df_players.to_csv(ALL_PLAYERS_CSV, index=False)
+    print(f"df_players.shape: {df_players.shape}")

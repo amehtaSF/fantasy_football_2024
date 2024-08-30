@@ -1,33 +1,33 @@
 fpts,fpts_ci,rank_pos,def_pts_allowed,def_yd_allowed,def_sack,def_int,def_fum,def_td,player,team,pos,source,source_url,fpts_halfppr_adjust
-137.13,111.52-162.74,#1,334.4,5417.6,51.22,12.04,8.9,3.22,"Baltimore D/ST  BAL D/ST  (D, BAL)",BAL,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-134.2,108.76-159.64,#2,335.9,5411.6,49.98,11.63,8.72,3.22,"Kansas City D/ST  KC D/ST  (D, KC)",KC,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-132.15,106.78-157.52,#3,383.7,5584.4,60.03,12.16,9.0,2.82,"Philadelphia D/ST  PHI D/ST  (D, PHI)",PHI,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-131.04,105.73-156.35,#4,341.6,5863.1,46.89,11.66,9.47,3.17,"Cincinnati D/ST  CIN D/ST  (D, CIN)",CIN,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-128.73,103.54-153.92,#5,336.0,5559.0,43.75,12.22,8.59,3.12,"New York Jets D/ST  NYJ D/ST  (D, NYJ)",NYJ,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-125.8,100.75-150.85,#6,372.0,5746.6,52.23,11.57,9.12,2.78,"Pittsburgh D/ST  PIT D/ST  (D, PIT)",PIT,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-124.45,99.48-149.42,#7,362.1,5710.0,46.8,12.86,7.96,3.02,"San Francisco D/ST  SF D/ST  (D, SF)",SF,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-124.06,99.11-149.01,#8,359.7,5652.6,47.73,11.2,9.11,2.91,"Los Angeles Chargers D/ST  LAC D/ST  (D, LAC)",LAC,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-122.85,97.94-147.76,#9,377.6,5731.7,51.33,11.5,8.66,2.8,"Tampa Bay D/ST  TB D/ST  (D, TB)",TB,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-122.44,97.56-147.32,#10,344.8,5587.4,40.42,12.3,8.3,3.12,"Atlanta D/ST  ATL D/ST  (D, ATL)",ATL,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-122.38,97.49-147.27,#11,375.5,5659.2,49.56,11.81,8.59,2.88,"Dallas D/ST  DAL D/ST  (D, DAL)",DAL,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-121.3,96.48-146.12,#12,380.0,5780.3,49.0,11.84,8.91,2.86,"Miami D/ST  MIA D/ST  (D, MIA)",MIA,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-119.08,94.36-143.8,#13,390.2,5879.0,50.08,11.77,8.93,2.79,"Houston D/ST  HOU D/ST  (D, HOU)",HOU,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-118.59,93.89-143.29,#14,383.4,5646.3,47.45,11.91,9.04,2.76,"New Orleans D/ST  NO D/ST  (D, NO)",NO,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-117.43,92.78-142.08,#15,422.7,5683.8,59.67,11.22,8.64,2.43,"Washington D/ST  WSH D/ST  (D, WSH)",WSH,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-117.33,92.7-141.96,#16,371.1,5507.1,45.24,11.48,8.22,2.81,"Cleveland D/ST  CLE D/ST  (D, CLE)",CLE,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-116.96,92.34-141.58,#17,393.6,5793.7,50.23,11.67,8.53,2.69,"Indianapolis D/ST  IND D/ST  (D, IND)",IND,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-114.81,90.31-139.31,#18,394.5,5919.0,47.61,12.46,8.06,2.8,"Green Bay D/ST  GB D/ST  (D, GB)",GB,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-114.46,89.96-138.96,#19,385.7,5765.6,46.08,11.22,8.77,2.71,"Las Vegas D/ST  LV D/ST  (D, LV)",LV,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-113.33,88.89-137.77,#20,387.0,5864.7,45.14,11.29,8.31,2.81,"Buffalo D/ST  BUF D/ST  (D, BUF)",BUF,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-112.32,87.92-136.72,#21,419.8,5861.1,51.75,11.99,8.61,2.54,"Seattle D/ST  SEA D/ST  (D, SEA)",SEA,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-112.2,87.82-136.58,#22,400.4,5742.2,46.29,11.84,9.05,2.56,"New York Giants D/ST  NYG D/ST  (D, NYG)",NYG,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-111.04,86.71-135.37,#23,397.7,5905.5,46.58,11.11,8.68,2.6,"Denver D/ST  DEN D/ST  (D, DEN)",DEN,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-109.63,85.39-133.87,#24,406.4,5812.1,45.45,12.6,7.98,2.67,"Los Angeles Rams D/ST  LA D/ST  (D, LA)",LA,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-109.38,85.13-133.63,#25,395.9,6070.9,41.72,12.68,8.2,2.67,"Arizona D/ST  ARI D/ST  (D, ARI)",ARI,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-109.33,85.1-133.56,#26,403.0,6054.4,42.77,13.12,8.06,2.72,"Detroit D/ST  DET D/ST  (D, DET)",DET,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-108.82,84.59-133.05,#27,385.0,5844.9,37.77,12.59,8.27,2.83,"Chicago D/ST  CHI D/ST  (D, CHI)",CHI,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-108.18,84-132.36,#28,403.7,5866.3,43.87,11.9,8.4,2.62,"Jacksonville D/ST  JAC D/ST  (D, JAC)",JAC,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-107.86,83.69-132.03,#29,401.1,5940.0,43.29,11.53,8.66,2.57,"Tennessee D/ST  TEN D/ST  (D, TEN)",TEN,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-106.62,82.51-130.73,#30,416.0,5800.9,47.62,11.39,8.13,2.49,"Minnesota D/ST  MIN D/ST  (D, MIN)",MIN,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-99.05,75.32-122.78,#31,420.7,5767.9,42.3,11.3,8.09,2.41,"New England D/ST  NE D/ST  (D, NE)",NE,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
-95.96,72.37-119.55,#32,415.0,5670.2,36.5,11.47,8.45,2.45,"Carolina D/ST  CAR D/ST  (D, CAR)",CAR,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+137.57,111.95-163.19,#1,333.9,5436.7,51.24,12.05,9.04,3.21,"Baltimore D/ST  BAL D/ST  (D, BAL)",BAL,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+133.93,108.5-159.36,#2,335.6,5424.4,49.66,11.5,8.87,3.2,"Kansas City D/ST  KC D/ST  (D, KC)",KC,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+132.51,107.12-157.9,#3,384.0,5591.1,60.08,12.28,9.11,2.83,"Philadelphia D/ST  PHI D/ST  (D, PHI)",PHI,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+131.44,106.11-156.77,#4,340.0,5859.9,46.84,11.54,9.56,3.2,"Cincinnati D/ST  CIN D/ST  (D, CIN)",CIN,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+128.39,103.23-153.55,#5,336.7,5560.1,43.87,12.15,8.55,3.13,"New York Jets D/ST  NYJ D/ST  (D, NYJ)",NYJ,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+126.68,101.59-151.77,#6,368.9,5762.7,52.09,11.48,9.28,2.81,"Pittsburgh D/ST  PIT D/ST  (D, PIT)",PIT,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+126.58,101.5-151.66,#7,342.1,5535.5,43.92,12.11,8.47,3.11,"Atlanta D/ST  ATL D/ST  (D, ATL)",ATL,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+123.47,98.54-148.4,#8,359.4,5662.7,47.04,11.11,9.16,2.9,"Los Angeles Chargers D/ST  LAC D/ST  (D, LAC)",LAC,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+122.92,98.02-147.82,#9,361.5,5732.1,45.32,12.8,7.95,3.02,"San Francisco D/ST  SF D/ST  (D, SF)",SF,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+122.49,97.6-147.38,#10,378.3,5732.1,51.19,11.38,8.78,2.81,"Tampa Bay D/ST  TB D/ST  (D, TB)",TB,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+120.81,96-145.62,#11,373.8,5697.7,47.1,11.94,8.64,2.89,"Dallas D/ST  DAL D/ST  (D, DAL)",DAL,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+120.14,95.37-144.91,#12,381.5,5797.7,48.25,11.83,8.94,2.83,"Miami D/ST  MIA D/ST  (D, MIA)",MIA,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+119.6,94.85-144.35,#13,383.1,5633.7,47.94,11.91,9.3,2.79,"New Orleans D/ST  NO D/ST  (D, NO)",NO,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+118.05,93.38-142.72,#14,370.0,5519.0,45.57,11.42,8.31,2.82,"Cleveland D/ST  CLE D/ST  (D, CLE)",CLE,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+117.37,92.75-141.99,#15,390.8,5899.7,48.78,11.71,8.9,2.78,"Houston D/ST  HOU D/ST  (D, HOU)",HOU,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+116.46,91.87-141.05,#16,386.8,5832.2,47.89,11.36,8.39,2.82,"Buffalo D/ST  BUF D/ST  (D, BUF)",BUF,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+115.57,91.01-140.13,#17,424.3,5721.3,57.79,11.37,8.7,2.43,"Washington D/ST  WSH D/ST  (D, WSH)",WSH,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+114.89,90.37-139.41,#18,385.3,5768.5,46.08,11.33,8.83,2.68,"Las Vegas D/ST  LV D/ST  (D, LV)",LV,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+114.46,89.98-138.94,#19,394.3,5920.9,47.85,12.16,8.03,2.79,"Green Bay D/ST  GB D/ST  (D, GB)",GB,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+113.91,89.44-138.38,#20,393.2,5836.2,47.46,11.63,8.41,2.72,"Indianapolis D/ST  IND D/ST  (D, IND)",IND,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+111.48,87.14-135.82,#21,400.2,5763.7,45.39,11.82,9.13,2.56,"New York Giants D/ST  NYG D/ST  (D, NYG)",NYG,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+111.27,86.93-135.61,#22,395.5,5917.4,46.24,10.95,8.86,2.63,"Denver D/ST  DEN D/ST  (D, DEN)",DEN,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+110.2,85.91-134.49,#23,386.3,5821.9,39.92,12.31,8.38,2.84,"Chicago D/ST  CHI D/ST  (D, CHI)",CHI,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+109.25,85.02-133.48,#24,406.5,5815.8,45.49,12.39,8.02,2.66,"Los Angeles Rams D/ST  LA D/ST  (D, LA)",LA,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+109.07,84.85-133.29,#25,402.9,6055.9,43.01,12.87,8.07,2.72,"Detroit D/ST  DET D/ST  (D, DET)",DET,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+108.16,83.97-132.35,#26,405.2,5866.7,44.62,11.66,8.46,2.62,"Jacksonville D/ST  JAC D/ST  (D, JAC)",JAC,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+107.92,83.74-132.1,#27,418.7,5924.4,47.4,11.94,8.51,2.56,"Seattle D/ST  SEA D/ST  (D, SEA)",SEA,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+106.19,82.09-130.29,#28,396.7,6116.0,38.93,12.66,8.16,2.66,"Arizona D/ST  ARI D/ST  (D, ARI)",ARI,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+105.35,81.3-129.4,#29,416.0,5821.4,46.34,11.4,8.1,2.5,"Minnesota D/ST  MIN D/ST  (D, MIN)",MIN,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+104.78,80.76-128.8,#30,402.8,5993.3,40.8,11.53,8.59,2.53,"Tennessee D/ST  TEN D/ST  (D, TEN)",TEN,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+95.7,72.13-119.27,#31,415.0,5682.8,35.89,11.52,8.56,2.46,"Carolina D/ST  CAR D/ST  (D, CAR)",CAR,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False
+93.06,69.63-116.49,#32,420.3,5865.7,36.19,11.44,7.94,2.43,"New England D/ST  NE D/ST  (D, NE)",NE,d,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/d,False

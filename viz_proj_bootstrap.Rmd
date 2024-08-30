@@ -1,0 +1,136 @@
+---
+title: "preseason_analysis_2_proj_bootstrap.Rmd"
+output: html_document
+date: "2024-08-03"
+---
+
+MAKE AN RL ALGORITHM WHICH DOES DRAFTS AGAINST OTHER RL ALGORITHMS 
+
+Preproc
+===
+```{r}
+rm(list=ls())
+library(ffanalytics)
+library(yaml)
+library(tidyverse)
+library(tidylog)
+library(tidybayes)
+```
+
+```{r}
+config <- read_yaml("config.yaml")
+```
+
+
+```{r}
+df_qb_resamples <- read_csv("data/proj_bootstrap/qb_proj_resamples.csv")
+df_rb_resamples <- read_csv("data/proj_bootstrap/rb_proj_resamples.csv")
+df_wr_resamples <- read_csv("data/proj_bootstrap/wr_proj_resamples.csv")
+df_te_resamples <- read_csv("data/proj_bootstrap/te_proj_resamples.csv")
+df_k_resamples <- read_csv("data/proj_bootstrap/k_proj_resamples.csv")
+df_def_resamples <- read_csv("data/proj_bootstrap/def_proj_resamples.csv")
+```
+
+
+QB
+===
+```{r}
+
+d_agg <- df_qb_resamples %>% 
+  group_by(sleeper_id, full_name) %>%
+  summarize(
+    mean_fp = mean(fpts),
+    min_fp = min(fpts), 
+    max_fp = max(fpts),
+    sd_fp = sd(fpts)
+  ) %>% 
+  ungroup %>% 
+  arrange(desc(mean_fp)) %>%
+  mutate(mean_fp_dx = mean_fp - lag(mean_fp)) %>% 
+  mutate(pos_rank = row_number())  %>%
+  filter(pos_rank <= 20) 
+
+d <- df_qb_resamples %>%
+  inner_join(d_agg) %>%
+  mutate(full_name = factor(full_name)) %>% 
+  mutate(full_name = fct_reorder(full_name, desc(mean_fp)))
+
+d %>%
+  ggplot(aes(x = full_name, y = mean_fp)) +
+  geom_errorbar(aes(ymin = min_fp, ymax = max_fp), width = 0.2) +
+  stat_halfeye(aes(y = fpts)) +
+  geom_text(aes(label = round(mean_fp_dx), y = 220), size = 4, data=d_agg) +
+  geom_text(aes(label = round(mean_fp), y = 200), size = 4, data=d_agg) +
+  geom_text(aes(label = round(pos_rank), y = 185), size = 3, data=d_agg) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+
+```
+
+
+RB
+===
+```{r}
+text_y <- 120
+d_agg <- df_rb_resamples %>% 
+  group_by(sleeper_id, full_name) %>%
+  summarize(
+    mean_fp = mean(fpts),
+    min_fp = min(fpts), 
+    max_fp = max(fpts),
+    sd_fp = sd(fpts)
+  ) %>% 
+  ungroup %>% 
+  arrange(desc(mean_fp)) %>%
+  mutate(mean_fp_dx = mean_fp - lag(mean_fp)) %>% 
+  mutate(pos_rank = row_number())  %>%
+  filter(pos_rank <= 20) 
+
+d <- df_rb_resamples %>%
+  inner_join(d_agg) %>%
+  mutate(full_name = factor(full_name)) %>% 
+  mutate(full_name = fct_reorder(full_name, desc(mean_fp)))
+
+d %>%
+  ggplot(aes(x = full_name, y = mean_fp)) +
+  geom_errorbar(aes(ymin = min_fp, ymax = max_fp), width = 0.2) +
+  stat_halfeye(aes(y = fpts)) +
+  geom_text(aes(label = round(mean_fp_dx), y = text_y+20), size = 4, data=d_agg) +
+  geom_text(aes(label = round(mean_fp), y = text_y), size = 4, data=d_agg) +
+  geom_text(aes(label = round(pos_rank), y = text_y-15), size = 3, data=d_agg) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+```
+
+WR
+```{r}
+text_y <- 120
+d_agg <- df_wr_resamples %>% 
+  group_by(sleeper_id, full_name) %>%
+  summarize(
+    mean_fp = mean(fpts),
+    min_fp = min(fpts), 
+    max_fp = max(fpts),
+    sd_fp = sd(fpts)
+  ) %>% 
+  ungroup %>% 
+  arrange(desc(mean_fp)) %>%
+  mutate(mean_fp_dx = mean_fp - lag(mean_fp)) %>% 
+  mutate(pos_rank = row_number())  %>%
+  filter(pos_rank <= 20)
+
+d <- df_wr_resamples %>%
+  inner_join(d_agg) %>%
+  mutate(full_name = factor(full_name)) %>% 
+  mutate(full_name = fct_reorder(full_name, desc(mean_fp)))
+
+d %>%
+  ggplot(aes(x = full_name, y = mean_fp)) +
+  geom_errorbar(aes(ymin = min_fp, ymax = max_fp), width = 0.2) +
+  stat_halfeye(aes(y = fpts)) +
+  geom_text(aes(label = round(mean_fp_dx), y = text_y+20), size = 4, data=d_agg) +
+  geom_text(aes(label = round(mean_fp), y = text_y), size = 4, data=d_agg) +
+  geom_text(aes(label = round(pos_rank), y = text_y-15), size = 3, data=d_agg) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+```
+

@@ -1,0 +1,39 @@
+{
+    "policy": "MlpPolicy",
+    "learning_rate": 5e-05,
+    "n_steps": 90,
+    "batch_size": 180,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "clip_range_vf": null,
+    "normalize_advantage": true,
+    "ent_coef": 0.02,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "use_sde": false,
+    "sde_sample_freq": -1,
+    "rollout_buffer_class": null,
+    "rollout_buffer_kwargs": null,
+    "target_kl": 0.005,
+    "stats_window_size": 100,
+    "policy_kwargs": {
+        "net_arch": [
+            {
+                "pi": [
+                    128,
+                    128
+                ],
+                "vf": [
+                    128,
+                    128
+                ]
+            }
+        ]
+    },
+    "verbose": 1,
+    "seed": 42,
+    "device": "auto",
+    "_init_setup_model": true
+}

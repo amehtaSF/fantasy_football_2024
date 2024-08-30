@@ -64,6 +64,7 @@ df_fd_reg <- df_fantasydata %>%
 df_fd_reg2023 <- df_fd_reg %>% 
   filter(year == "2023")
 
+
 df_fd_fpts_3yrs <- df_fantasydata %>% 
   filter(year %in% c("2021", "2022", "2023")) %>% 
   select(full_name, season, fpts, fpts_per_game) %>% 
@@ -126,3 +127,159 @@ Historical player data
 
 Historical manager analysis
 ===
+
+
+Estimate variance
+===
+
+```{r}
+
+```
+
+```{r}
+library(nflreadr)
+
+
+# Load the necessary libraries
+library(tidyverse)
+
+
+df_sleeper <- read_csv("data/sleeper/all_players.csv")
+df_qb_proj <- read_csv("data/projections/QB_projections.csv") 
+df_rb_proj <- read_csv("data/projections/RB_projections.csv")
+df_wr_proj <- read_csv("data/projections/WR_projections.csv")
+df_te_proj <- read_csv("data/projections/TE_projections.csv")
+df_k_proj <- read_csv("data/projections/K_projections.csv")
+df_def_proj <- read_csv("data/projections/DEF_projections.csv")
+
+df_proj <- df_qb_proj %>% 
+  select(sleeper_id, full_name, team, position, source, fpts) %>%
+  mutate(sleeper_id = as.character(sleeper_id)) %>%
+  bind_rows(
+    df_rb_proj %>% 
+      select(sleeper_id, full_name, team, position, source, fpts) %>% 
+      mutate(sleeper_id = as.character(sleeper_id))
+  ) %>% 
+  bind_rows(
+    df_wr_proj %>% 
+      select(sleeper_id, full_name, team, position, source, fpts) %>% 
+      mutate(sleeper_id = as.character(sleeper_id))
+  ) %>% 
+  bind_rows(
+    df_te_proj %>% 
+      select(sleeper_id, full_name, team, position, source, fpts) %>% 
+      mutate(sleeper_id = as.character(sleeper_id))
+  ) %>%
+  bind_rows(
+    df_k_proj %>% 
+      select(sleeper_id, full_name, team, position, source, fpts) %>% 
+      mutate(sleeper_id = as.character(sleeper_id))
+  ) %>%
+  bind_rows(
+    df_def_proj %>% 
+      select(sleeper_id, full_name, team, position, source, fpts) %>% 
+      mutate(sleeper_id = as.character(sleeper_id))
+  ) %>% 
+  group_by(sleeper_id, full_name, team, position) %>% 
+  summarize(
+    n_proj = n(),
+    mean_proj = mean(fpts, na.rm=T),
+    sd_proj = sd(fpts, na.rm=T),
+    min_proj = min(fpts, na.rm=T),
+    max_proj = max(fpts, na.rm=T)
+  ) %>% 
+  ungroup 
+
+
+df_hist_raw = load_player_stats(seasons = 2021:2023) %>% 
+  filter(position %in% c("QB", "RB", "WR", "TE")) %>% 
+  mutate(halfppr = fantasy_points_ppr - .5*receptions) 
+df_hist = df_hist_raw %>% 
+  group_by(player_display_name, position, season) %>% 
+  summarize(
+    n_games = n(),
+    mean_fp = mean(halfppr, na.rm=T),
+    sd_fp = sd(halfppr, na.rm=T),
+    var_fp = var(halfppr, na.rm=T)
+  ) %>% 
+  summarize(
+    n_ssns = n(),
+    n_games = sum(n_games, na.rm=T),
+    mean_ssn_fp = mean(mean_fp, na.rm=T),
+    mean_sd_fp = mean(sd_fp, na.rm=T),
+    mean_var_fp = mean(var_fp, na.rm=T)
+  ) %>% 
+  ungroup %>% 
+  select(-position) %>% 
+  rename(hist_name = player_display_name)
+
+# df_nflverse_stats %>% 
+#   write_csv("data/nflverse/mean_var_weekly_fp.csv")
+
+library(stringdist)
+
+df_full <- df_proj %>% 
+  mutate(row_num = map_dbl(full_name, ~{
+    amatch(., df_hist$hist_name, method="lv", maxDist = 3)
+  })) %>% 
+  left_join(df_hist %>% 
+              mutate(row_num = row_number()), 
+            by="row_num") 
+  
+
+  # select(player_display_name, full_name, season, week, position, fantasy_points) %>% 
+  # filter(!is.na(full_name)) %>% 
+  # group_by(full_name, season) %>% 
+  # summarize(
+  #   mean_fp = mean(fantasy_points),
+  #   sd_fp = sd(fantasy_points)
+  # ) %>% 
+  # ungroup %>% 
+  # pivot_wider(names_from = season, values_from = c(mean_fp, sd_fp))
+
+```
+
+
+```{r}
+d <- load_pfr_advstats(
+  seasons = 2021:2023,
+  stat_type = "def",
+  summary_level = "week"
+)
+```
+
+
+```{r}
+
+f <- function(){
+  a <- 1
+  b <- 1
+  for(i in 1:1000){
+    
+    p = rbeta(1, a, b)
+    
+    x = rbinom(1, 1, p)
+    
+    if (x == 1){
+      a = a + 1
+    } else {
+      b = b + 1
+    }
+  }
+  return (a/(a+b))
+}
+
+sims <- replicate(1000, f())
+```
+
+```{r}
+mean(sims)
+```
+
+
+```{r}
+qb <- read_csv("data/nflverse/qb_mean_var.csv")
+```
+
+
+

@@ -1,101 +1,229 @@
-,RK,NAME,TEAM,POS,GP,YDS,TD,INT,YDS.1,TD.1,REC,YDS.2,TD.2,SCK,INT.1,FF,FR,FPTS/G,FPTS
-0,1,Christian McCaffrey,SF,RB,3,0,0,0,268,4,19,152,1,0,0,0,0,26.5,79.5
-1,2,Patrick Mahomes,KC,QB,4,1051,6,1,141,0,0,0,0,0,0,0,0,19.5,78.1
-2,3,Travis Kelce,KC,TE,4,0,0,0,5,0,32,355,3,0,0,0,0,17.5,70.0
-3,4,Josh Allen,BUF,QB,2,389,4,0,146,3,0,0,0,0,0,0,0,32.1,64.2
-4,5,Isiah Pacheco,KC,RB,4,0,0,0,313,3,12,60,0,0,0,0,0,14.8,59.3
-5,6,Lamar Jackson,BAL,QB,2,424,3,1,154,2,1,13,0,0,0,0,0,27.1,54.2
-6,7,Baker Mayfield,TB,QB,2,686,6,2,31,0,0,0,0,0,0,0,0,25.3,50.5
-7,8,Jared Goff,DET,QB,3,837,4,0,3,0,0,0,0,0,0,0,0,16.6,49.8
-8,9,Brock Purdy,SF,QB,3,774,3,1,74,0,0,0,0,0,0,0,0,16.1,48.4
-9,10,Aaron Jones,GB,RB,2,0,0,0,226,3,4,21,0,0,0,0,0,23.4,46.7
-10,11,Rashee Rice,KC,WR,4,0,0,0,5,0,26,262,1,0,0,0,0,11.4,45.7
-11,12,Jahmyr Gibbs,DET,RB,3,0,0,0,144,3,11,94,0,0,0,0,0,15.1,45.3
-12,13,Harrison Butker,KC,K,4,0,0,0,0,0,0,0,0,0,0,0,0,11.2,45.0
-13,14,Amon-Ra St. Brown,DET,WR,3,0,0,0,2,0,22,274,1,0,0,0,0,14.9,44.6
-14,15,George Karlaftis,KC,DE,4,0,0,0,0,0,0,0,0,3,0,0,2,9.8,39.0
-15,16,David Montgomery,DET,RB,3,0,0,0,183,2,6,45,0,0,0,0,0,12.6,37.8
-16,17,Jordan Love,GB,QB,2,466,5,2,2,0,0,0,0,0,0,0,0,18.4,36.8
-17,18,Romeo Doubs,GB,WR,2,0,0,0,0,0,10,234,1,0,0,0,0,17.2,34.4
-18,19,Sam LaPorta,DET,TE,3,0,0,0,0,0,21,176,1,0,0,0,0,11.4,34.1
-19,20,Nick Bolton,KC,LB,4,0,0,0,0,0,0,0,0,0,0,0,0,8.5,34.0
-20,21,Jake Ferguson,DAL,TE,1,0,0,0,0,0,10,93,3,0,0,0,0,32.3,32.3
-21,22,Christian Harris,HOU,LB,2,0,0,0,0,0,0,0,0,1,1,0,0,16.1,32.3
-22,23,Jake Moody,SF,K,3,0,0,0,0,0,0,0,0,0,0,0,0,10.7,32.0
-23,24,Nick Bosa,SF,DL,3,0,0,0,0,0,0,0,0,2,0,0,0,10.6,31.8
-24,25,Fred Warner,SF,LB,3,0,0,0,0,0,0,0,0,0,0,0,0,10.5,31.5
-25,26,Justin Reid,KC,S,4,0,0,0,0,0,0,0,0,2,0,0,0,7.9,31.5
-26,27,Mike Evans,TB,WR,2,0,0,0,0,0,11,195,1,0,0,0,0,15.5,31.0
-27,28,C.J. Stroud,HOU,QB,2,449,3,0,10,0,0,0,0,0,0,0,0,15.5,31.0
-28,29,Dak Prescott,DAL,QB,1,403,3,2,45,0,0,0,0,0,0,0,0,30.6,30.6
-29,30,Aidan Hutchinson,DET,DL,3,0,0,0,0,0,0,0,0,3,0,0,0,10.0,29.9
-30,31,Puka Nacua,LAR,WR,1,0,0,0,-2,0,9,181,1,0,0,0,0,28.4,28.4
-31,32,Nico Collins,HOU,WR,2,0,0,0,4,0,11,164,1,0,0,0,0,14.1,28.3
-32,33,Cade Otton,TB,TE,2,0,0,0,0,0,13,154,1,0,0,0,0,13.9,27.9
-33,34,Jameson Williams,DET,WR,3,0,0,0,42,1,6,79,1,0,0,0,0,9.0,27.1
-34,35,Jauan Jennings,SF,WR,3,21,1,0,-1,0,10,111,1,0,0,0,0,8.9,26.8
-35,36,Lavonte David,TB,LB,2,0,0,0,0,0,0,0,0,1,0,1,0,13.3,26.6
-36,37,Brandon Aiyuk,SF,WR,3,0,0,0,0,0,9,149,1,0,0,0,0,8.5,25.4
-37,38,Rachaad White,TB,RB,2,0,0,0,127,0,5,39,1,0,0,0,0,12.6,25.1
-38,39,Brian Branch,DET,DB,3,0,0,0,0,0,0,0,0,1,0,0,0,8.3,24.9
-39,40,Zay Flowers,BAL,WR,2,0,0,0,4,0,9,156,1,0,0,0,0,12.2,24.5
-40,41,Khalil Shakir,BUF,WR,2,0,0,0,0,0,10,75,2,0,0,0,0,12.2,24.5
-41,42,Trent McDuffie,KC,CB,4,0,0,0,0,0,0,0,0,0,0,0,1,6.0,24.0
-42,43,Alex Anzalone,DET,LB,3,0,0,0,0,0,0,0,0,0,0,0,0,8.0,24.0
-43,44,Devin Singletary,HOU,RB,2,0,0,0,88,1,8,52,0,0,0,0,0,12.0,24.0
-44,45,Josh Reynolds,DET,WR,3,0,0,0,0,0,8,132,1,0,0,0,0,7.7,23.2
-45,46,Steven Nelson,HOU,CB,2,0,0,0,0,0,0,0,0,0,1,0,0,11.5,23.0
-46,47,Marquez Valdes-Scantling,KC,WR,4,0,0,0,0,0,8,128,1,0,0,0,0,5.7,22.8
-47,48,Matthew Stafford,LAR,QB,1,367,2,0,0,0,0,0,0,0,0,0,0,22.7,22.7
-48,49,Deebo Samuel Sr.,SF,WR,3,0,0,0,15,0,13,146,0,0,0,0,0,7.5,22.6
-49,50,Dre Greenlaw,SF,LB,3,0,0,0,0,0,0,0,0,0,2,0,0,7.5,22.5
-50,51,Michael Badgley,DET,K,3,0,0,0,0,0,0,0,0,0,0,0,0,7.3,22.0
-51,52,Ifeatu Melifonwu,DET,S,3,0,0,0,0,0,0,0,0,2,0,0,0,7.3,21.9
-52,53,L'Jarius Sneed,KC,CB,4,0,0,0,0,0,0,0,0,0,0,1,0,5.4,21.5
-53,54,George Kittle,SF,TE,3,0,0,0,0,0,8,112,1,0,0,0,0,7.1,21.2
-54,55,Desmond King II,HOU,CB,2,0,0,0,0,0,0,0,0,1,0,0,0,10.4,20.8
-55,56,James Cook,BUF,RB,2,0,0,0,140,0,8,26,0,0,0,0,0,10.3,20.6
-56,57,Ji'Ayir Brown,SF,S,2,0,0,0,0,0,0,0,0,0,1,0,0,10.2,20.5
-57,58,Dalton Kincaid,BUF,TE,2,0,0,0,0,0,8,104,1,0,0,0,0,10.2,20.4
-58,59,Keisean Nixon,GB,CB,2,0,0,0,0,0,0,0,0,1,0,0,0,9.8,19.6
-59,60,Roquan Smith,BAL,ILB,2,0,0,0,0,0,0,0,0,0,0,0,0,9.8,19.5
-60,61,De'Vondre Campbell,GB,LB,2,0,0,0,0,0,0,0,0,1,0,0,0,9.8,19.5
-61,62,Drue Tranquill,KC,LB,4,0,0,0,0,0,0,0,0,0,0,0,0,4.9,19.5
-62,63,Chase McLaughlin,TB,K,2,0,0,0,0,0,0,0,0,0,0,0,0,9.5,19.0
-63,64,Jamel Dean,TB,CB,2,0,0,0,0,0,0,0,0,0,0,0,0,9.5,19.0
-64,65,Blake Cashman,HOU,LB,2,0,0,0,0,0,0,0,0,1,0,0,0,9.4,18.9
-65,66,DeVonta Smith,PHI,WR,1,0,0,0,0,0,8,148,0,0,0,0,0,18.8,18.8
-66,67,Ernest Jones IV,LAR,LB,1,0,0,0,0,0,0,0,0,2,0,1,0,18.6,18.6
-67,68,Chris Godwin,TB,WR,2,0,0,0,0,0,8,85,1,0,0,0,0,9.2,18.5
-68,69,Chris Jones,KC,DT,4,0,0,0,0,0,0,0,0,1,0,1,0,4.5,18.2
-69,70,Tony Pollard,DAL,RB,1,0,0,0,56,1,7,29,0,0,0,0,0,18.0,18.0
-70,71,Kareem Hunt,CLE,RB,1,0,0,0,26,1,5,9,1,0,0,0,0,18.0,18.0
-71,72,Chamarri Conner,KC,DB,4,0,0,0,0,0,0,0,0,0,0,1,0,4.4,17.5
-72,73,Darnell Savage,GB,S,2,0,0,0,0,0,0,0,0,0,1,0,0,8.8,17.5
-73,74,Trey Palmer,TB,WR,2,0,0,0,9,0,3,88,1,0,0,0,0,8.6,17.2
-74,75,Dalton Schultz,HOU,TE,2,0,0,0,0,0,6,80,1,0,0,0,0,8.5,17.0
-75,76,Deommodore Lenoir,SF,DB,3,0,0,0,0,0,0,0,0,0,0,1,0,5.7,17.0
-76,77,Tashaun Gipson Sr.,SF,S,3,0,0,0,0,0,0,0,0,0,0,1,0,5.7,17.0
-77,78,Mason Rudolph,PIT,QB,1,229,2,1,16,0,0,0,0,0,0,0,0,16.8,16.8
-78,79,Leo Chenal,KC,LB,4,0,0,0,0,0,0,0,0,0,0,1,0,4.1,16.5
-79,80,Justin Tucker,BAL,K,2,0,0,0,0,0,0,0,0,0,0,0,0,8.0,16.0
-80,81,CeeDee Lamb,DAL,WR,1,0,0,0,5,0,9,110,0,0,0,0,0,16.0,16.0
-81,82,Luke Musgrave,GB,TE,2,0,0,0,0,0,6,66,1,0,0,0,0,7.8,15.6
-82,83,Arik Armstead,SF,DL,3,0,0,0,0,0,0,0,0,1,0,0,1,5.2,15.6
-83,84,Quay Walker,GB,LB,2,0,0,0,0,0,0,0,0,0,0,0,0,7.8,15.5
-84,85,David Moore,TB,WR,2,0,0,0,0,0,3,77,1,0,0,0,0,7.6,15.2
-85,86,Ka'imi Fairbairn,HOU,K,2,0,0,0,0,0,0,0,0,0,0,0,0,7.5,15.0
-86,87,Kyle Hamilton,BAL,S,2,0,0,0,0,0,0,0,0,0,0,0,0,7.5,15.0
-87,88,Tyreek Hill,MIA,WR,1,0,0,0,0,0,5,62,1,0,0,0,0,14.7,14.7
-88,89,Kurt Hinish,HOU,DT,2,0,0,0,0,0,0,0,0,2,0,0,0,7.3,14.6
-89,90,Mike Edwards,KC,S,4,0,0,0,0,0,0,0,0,0,1,0,0,3.6,14.5
-90,91,Jalen Hurts,PHI,QB,1,250,1,0,5,0,0,0,0,0,0,0,0,14.5,14.5
-91,92,Jordan Poyer,BUF,S,2,0,0,0,0,0,0,0,0,0,0,1,0,7.2,14.5
-92,93,Justice Hill,BAL,RB,2,0,0,0,69,0,6,45,0,0,0,0,0,7.2,14.4
-93,94,Javon Hargrave,SF,DL,3,0,0,0,0,0,0,0,0,1,0,0,1,4.8,14.3
-94,95,Mecole Hardman Jr.,KC,WR,4,0,0,0,-5,0,5,62,1,0,0,0,0,3.5,14.2
-95,96,Brevin Jordan,HOU,TE,2,0,0,0,0,0,1,76,1,0,0,0,0,7.0,14.1
-96,97,Calijah Kancey,TB,DL,2,0,0,0,0,0,0,0,0,2,0,0,0,6.9,13.8
-97,98,Joe Flacco,CLE,QB,1,307,1,2,13,0,0,0,0,0,0,0,0,13.6,13.6
-98,99,Patrick Queen,BAL,ILB,2,0,0,0,0,0,0,0,0,0,0,0,0,6.8,13.5
-99,100,Jaire Alexander,GB,CB,2,0,0,0,0,0,0,0,0,0,1,0,0,6.8,13.5
+,xp_made,xp_att,fg_made,fg_att,fg_1_19_made,fg_20_29_made,fg_30_39_made,fg_40_49_made,fg_50_made,fg_miss,fpts,source,source_url,gp,fg_longest,fg_1_19_att,fg_20_29_att,fg_30_39_att,fg_40_49_att,fg_50_att,fp_per_game,fpts_halfppr_adjust,fg_0_19_made,fpts_ci,rank_pos,fg_made_0_19,fg_made_20_29,fg_made_30_39,fg_made_40_49,fg_made_50_plus,name_match,src_player_name,sleeper_row,sleeper_id,full_name,team,position
+0,56.3,58.2,23.6,27.9,0.0,7.8,7.4,4.8,3.7,4.3,114.4,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Jake Moody', 100.0, 88)",Jake Moody,88.0,10937,Jake Moody,SF,K
+1,49,50.0,29.0,35.0,0.227,8.4,9.4,6.5,4.82,,136.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.227,8.5,10.7,9.7,4.82,8.0,False,,,,,,,,,"('Jake Moody', 100.0, 88)",Jake Moody,88.0,10937,Jake Moody,SF,K
+2,49,50.0,29.0,35.0,0.227,8.4,9.4,6.5,4.82,,136.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.227,8.5,10.7,9.7,4.82,8.0,False,,,,,,,,,"('Jake Moody', 100.0, 88)",Jake Moody,88.0,10937,Jake Moody,SF,K
+3,48,,,,,7,9,7,4,,137.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Jake Moody', 90.0, 88)",Jake Moody K - SF,88.0,10937,Jake Moody,SF,K
+4,43,,,,,5,7,7,3,,115.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,15,,,,,,,,False,-,,,,,,,,"('Jake Moody', 85.5, 88)",Jake Bates K - DET,88.0,10937,Jake Moody,SF,K
+5,55,,26.0,30.0,,,,,,,133.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Jake Moody', 100.0, 88)",Jake Moody,88.0,10937,Jake Moody,SF,K
+6,46.71,,24.4,31.04,,,,,,,129.26,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,115.18-143.34,#28,0.38,8.35,7.65,6.72,1.32,"('Jake Moody', 90.0, 88)","Jake Moody  J. Moody  (K, SF)",88.0,10937,Jake Moody,SF,K
+7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11533,Brandon Aubrey,DAL,K
+8,44.0,44.1,34.2,39.1,0.0,10.9,11.6,9.1,2.5,4.9,131.7,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Justin Tucker', 100.0, 197)",Justin Tucker,197.0,1264,Justin Tucker,BAL,K
+9,51,52.0,32.0,36.0,0.251,9,8.9,10.4,3.17,,147.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.252,9.1,9,11.6,3.17,8.6,False,,,,,,,,,"('Justin Tucker', 100.0, 197)",Justin Tucker,197.0,1264,Justin Tucker,BAL,K
+10,51,52.0,32.0,36.0,0.251,9.0,8.9,10.4,3.17,,147.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.252,9.1,9.0,11.6,3.17,8.6,False,,,,,,,,,"('Justin Tucker', 100.0, 197)",Justin Tucker,197.0,1264,Justin Tucker,BAL,K
+11,48,,,,,8,9,9,5,,151.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Justin Tucker', 90.0, 197)",Justin Tucker K - BAL,197.0,1264,Justin Tucker,BAL,K
+12,41,,34.0,39.0,,,,,,,143.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Justin Tucker', 100.0, 197)",Justin Tucker,197.0,1264,Justin Tucker,BAL,K
+13,47.35,,27.63,33.18,,,,,,,139.84,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,125.82-153.86,#15,0.48,10.04,9.58,5.51,2.05,"('Justin Tucker', 90.0, 197)","Justin Tucker  J. Tucker  (K, BAL)",197.0,1264,Justin Tucker,BAL,K
+14,32.3,33.6,25.4,30.8,0.0,3.9,9.6,8.3,3.6,5.4,92.3,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Brandon McManus', 100.0, 310)",Brandon McManus,310.0,1433,Brandon McManus,,K
+15,9,,,,,1,2,2,1,,29.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,4,,,,,,,,False,-,,,,,,,,"('Brandon McManus', 95.0, 310)",Brandon McManus K,310.0,1433,Brandon McManus,,K
+16,11,,5.0,6.0,,,,,,,26.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Brandon McManus', 100.0, 310)",Brandon McManus,310.0,1433,Brandon McManus,,K
+17,0.0,,0.0,0.0,,,,,,,0.0,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,0-0,#33,0.0,0.0,0.0,0.0,0.0,"('Brandon McManus', 90.0, 310)","Brandon McManus  B. McManus  (K, WSH)",310.0,1433,Brandon McManus,,K
+18,34.8,35.3,34.1,39.2,0.0,9.0,11.8,8.0,5.2,5.2,121.6,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Jason Myers', 100.0, 292)",Jason Myers,292.0,2747,Jason Myers,SEA,K
+19,42,43.0,35.0,42.0,0.276,7.7,12,10.2,4.55,,147.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.276,7.8,13.2,12.3,4.55,8.6,False,,,,,,,,,"('Jason Myers', 100.0, 292)",Jason Myers,292.0,2747,Jason Myers,SEA,K
+20,42,43.0,35.0,42.0,0.276,7.7,12.0,10.2,4.55,,147.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.276,7.8,13.2,12.3,4.55,8.6,False,,,,,,,,,"('Jason Myers', 100.0, 292)",Jason Myers,292.0,2747,Jason Myers,SEA,K
+21,38,,,,,7,9,7,5,,132.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Jason Myers', 90.0, 292)",Jason Myers K - SEA,292.0,2747,Jason Myers,SEA,K
+22,35,,33.0,39.0,,,,,,,134.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Jason Myers', 100.0, 292)",Jason Myers,292.0,2747,Jason Myers,SEA,K
+23,43.07,,27.96,33.37,,,,,,,139.22,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,122.52-155.92,#16,0.26,8.26,9.63,7.32,2.48,"('Jason Myers', 90.0, 292)","Jason Myers  J. Myers  (K, SEA)",292.0,2747,Jason Myers,SEA,K
+24,26.9,28.6,31.7,33.9,0.0,10.3,10.5,3.6,7.3,2.2,115.6,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"(""Ka'imi Fairbairn"", 100.0, 286)",Ka'imi Fairbairn,286.0,3451,Ka'imi Fairbairn,HOU,K
+25,43,45.0,34.0,38.0,0.257,10.3,10.5,7.4,5.5,,145.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.257,10.4,10.7,10.2,5.5,8.5,False,,,,,,,,,"(""Ka'imi Fairbairn"", 100.0, 286)",Ka'imi Fairbairn,286.0,3451,Ka'imi Fairbairn,HOU,K
+26,43,45.0,34.0,38.0,0.257,10.3,10.5,7.4,5.5,,145.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.257,10.4,10.7,10.2,5.5,8.5,False,,,,,,,,,"(""Ka'imi Fairbairn"", 100.0, 286)",Ka'imi Fairbairn,286.0,3451,Ka'imi Fairbairn,HOU,K
+27,47,,,,,7,9,7,4,,136.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"(""Ka'imi Fairbairn"", 90.0, 286)",Ka'imi Fairbairn K - HOU,286.0,3451,Ka'imi Fairbairn,HOU,K
+28,33,,35.0,38.0,,,,,,,138.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"(""Ka'imi Fairbairn"", 100.0, 286)",Ka'imi Fairbairn,286.0,3451,Ka'imi Fairbairn,HOU,K
+29,35.82,,31.53,34.7,,,,,,,147.05,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,127.36-166.74,#8,0.44,7.61,10.22,9.67,3.57,"(""Ka'imi Fairbairn"", 90.0, 286)","Ka'imi Fairbairn  K. Fairbairn  (K, HOU)",286.0,3451,Ka'imi Fairbairn,HOU,K
+30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3827,Aldrick Rosas,,K
+31,51.4,52.4,26.1,28.0,0.0,7.5,7.8,5.4,5.4,1.9,123.9,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Jake Elliott', 100.0, 106)",Jake Elliott,106.0,4195,Jake Elliott,PHI,K
+32,53,54.0,31.0,34.0,0.255,8.8,8.7,7.8,5.4,,146.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.255,8.9,9.6,8.6,5.4,8.6,False,,,,,,,,,"('Jake Elliott', 100.0, 106)",Jake Elliott,106.0,4195,Jake Elliott,PHI,K
+33,53,54.0,31.0,34.0,0.255,8.8,8.7,7.8,5.4,,146.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.255,8.9,9.6,8.6,5.4,8.6,False,,,,,,,,,"('Jake Elliott', 100.0, 106)",Jake Elliott,106.0,4195,Jake Elliott,PHI,K
+34,41,,,,,7,8,8,4,,130.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Jake Elliott', 90.0, 106)",Jake Elliott K - PHI,106.0,4195,Jake Elliott,PHI,K
+35,46,,30.0,33.0,,,,,,,136.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Jake Elliott', 100.0, 106)",Jake Elliott,106.0,4195,Jake Elliott,PHI,K
+36,45.07,,30.51,33.81,,,,,,,154.07,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,136.54-171.6,#3,0.4,8.01,8.19,10.13,3.71,"('Jake Elliott', 90.0, 106)","Jake Elliott  J. Elliott  (K, PHI)",106.0,4195,Jake Elliott,PHI,K
+37,39.7,40.2,32.4,36.1,0.0,11.1,8.8,6.4,6.1,3.7,126.0,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Harrison Butker', 100.0, 32)",Harrison Butker,32.0,4227,Harrison Butker,KC,K
+38,46,47.0,35.0,38.0,0.264,10.6,10.4,7.6,5.6,,151.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.265,10.7,11.8,8.5,5.6,8.9,False,,,,,,,,,"('Harrison Butker', 100.0, 32)",Harrison Butker,32.0,4227,Harrison Butker,KC,K
+39,46,47.0,35.0,38.0,0.264,10.6,10.4,7.6,5.6,,151.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.265,10.7,11.8,8.5,5.6,8.9,False,,,,,,,,,"('Harrison Butker', 100.0, 32)",Harrison Butker,32.0,4227,Harrison Butker,KC,K
+40,51,,,,,8,10,7,5,,151.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Harrison Butker', 95.0, 32)",Harrison Butker K - KC,32.0,4227,Harrison Butker,KC,K
+41,40,,33.0,36.0,,,,,,,139.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Harrison Butker', 100.0, 32)",Harrison Butker,32.0,4227,Harrison Butker,KC,K
+42,45.52,,28.95,34.82,,,,,,,146.45,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,129.45-163.45,#9,0.24,8.96,8.58,8.13,2.99,"('Harrison Butker', 90.0, 32)","Harrison Butker  H. Butker  (K, KC)",32.0,4227,Harrison Butker,KC,K
+43,31.2,32.7,31.9,36.9,0.0,9.2,9.6,8.9,4.2,5.0,112.1,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Younghoe Koo', 100.0, 37)",Younghoe Koo,37.0,4666,Younghoe Koo,ATL,K
+44,54,56.0,39.0,44.0,0.308,11.8,11.6,10.5,4.57,,171.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.308,11.9,11.7,12,4.57,10.1,False,,,,,,,,,"('Younghoe Koo', 100.0, 37)",Younghoe Koo,37.0,4666,Younghoe Koo,ATL,K
+45,54,56.0,39.0,44.0,0.308,11.8,11.6,10.5,4.57,,171.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.308,11.9,11.7,12.0,4.57,10.1,False,,,,,,,,,"('Younghoe Koo', 100.0, 37)",Younghoe Koo,37.0,4666,Younghoe Koo,ATL,K
+46,39,,,,,8,9,7,6,,141.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Younghoe Koo', 90.0, 37)",Younghoe Koo K - ATL,37.0,4666,Younghoe Koo,ATL,K
+47,35,,31.0,36.0,,,,,,,128.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Younghoe Koo', 100.0, 37)",Younghoe Koo,37.0,4666,Younghoe Koo,ATL,K
+48,38.42,,28.33,32.82,,,,,,,136.69,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,118.39-154.99,#19,0.3,8.45,8.44,9.02,2.1,"('Younghoe Koo', 90.0, 37)","Younghoe Koo  Y. Koo  (K, ATL)",37.0,4666,Younghoe Koo,ATL,K
+49,38.4,38.9,31.6,34.9,0.0,9.5,9.6,7.9,4.6,3.3,123.3,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Daniel Carlson', 100.0, 304)",Daniel Carlson,304.0,5095,Daniel Carlson,LV,K
+50,35,35.0,25.0,28.0,0.205,8.2,6.7,7.5,2.71,,110.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.205,8.3,7.3,8.4,2.71,6.5,False,,,,,,,,,"('Daniel Carlson', 100.0, 304)",Daniel Carlson,304.0,5095,Daniel Carlson,LV,K
+51,35,35.0,25.0,28.0,0.205,8.2,6.7,7.5,2.71,,110.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.205,8.3,7.3,8.4,2.71,6.5,False,,,,,,,,,"('Daniel Carlson', 100.0, 304)",Daniel Carlson,304.0,5095,Daniel Carlson,LV,K
+52,36,,,,,8,9,7,5,,133.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Daniel Carlson', 90.0, 304)",Daniel Carlson K - LV,304.0,5095,Daniel Carlson,LV,K
+53,42,,,,,7,7,7,4,,125.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,16,,,,,,,,False,-,,,,,,,,"('Daniel Carlson', 85.5, 304)",Anders Carlson K - GB,304.0,5095,Daniel Carlson,LV,K
+54,35,,31.0,35.0,,,,,,,128.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Daniel Carlson', 100.0, 304)",Daniel Carlson,304.0,5095,Daniel Carlson,LV,K
+55,52.2,,27.88,33.72,,,,,,,147.77,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,133.41-162.13,#7,0.72,9.43,8.29,7.17,2.33,"('Daniel Carlson', 85.5, 304)","Anders Carlson  A. Carlson  (K, GB)",304.0,5095,Daniel Carlson,LV,K
+56,33.18,,28.96,36.16,,,,,,,133.38,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,115.89-150.87,#24,0.2,8.38,9.69,8.21,2.48,"('Daniel Carlson', 90.0, 304)","Daniel Carlson  D. Carlson  (K, LV)",304.0,5095,Daniel Carlson,LV,K
+57,49.2,50.6,26.1,31.4,0.0,5.5,8.7,7.8,4.0,5.3,111.4,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Jason Sanders', 100.0, 145)",Jason Sanders,145.0,5119,Jason Sanders,MIA,K
+58,51,52.0,29.0,34.0,0.229,6.8,8.3,8.6,4.82,,138.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.229,6.9,8.5,10.6,4.82,8.1,False,,,,,,,,,"('Jason Sanders', 100.0, 145)",Jason Sanders,145.0,5119,Jason Sanders,MIA,K
+59,51,52.0,29.0,34.0,0.229,6.8,8.3,8.6,4.82,,138.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.229,6.9,8.5,10.6,4.82,8.1,False,,,,,,,,,"('Jason Sanders', 100.0, 145)",Jason Sanders,145.0,5119,Jason Sanders,MIA,K
+60,46,,,,,7,8,7,4,,132.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Jason Sanders', 90.0, 145)",Jason Sanders K - MIA,145.0,5119,Jason Sanders,MIA,K
+61,50,,27.0,32.0,,,,,,,131.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Jason Sanders', 100.0, 145)",Jason Sanders,145.0,5119,Jason Sanders,MIA,K
+62,51.22,,26.62,31.34,,,,,,,144.37,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,127.83-160.91,#10,0.59,9.81,6.42,6.37,3.46,"('Jason Sanders', 90.0, 145)","Jason Sanders  J. Sanders  (K, MIA)",145.0,5119,Jason Sanders,MIA,K
+63,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5823,Tristan Vizcaino,,K
+64,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5837,Redford Jones,,K
+65,33.4,34.2,33.7,41.8,0.0,8.6,10.5,7.2,7.3,8.1,110.2,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Matt Gay', 100.0, 57)",Matt Gay,57.0,6083,Matt Gay,IND,K
+66,41,42.0,32.0,38.0,0.263,8.6,10,7.6,5.6,,137.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.263,8.7,10.7,9.4,5.6,8.1,False,,,,,,,,,"('Matt Gay', 100.0, 57)",Matt Gay,57.0,6083,Matt Gay,IND,K
+67,41,42.0,32.0,38.0,0.263,8.6,10.0,7.6,5.6,,137.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.263,8.7,10.7,9.4,5.6,8.1,False,,,,,,,,,"('Matt Gay', 100.0, 57)",Matt Gay,57.0,6083,Matt Gay,IND,K
+68,35,,,,,7,9,7,5,,129.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Matt Gay', 90.0, 57)",Matt Gay K - IND,57.0,6083,Matt Gay,IND,K
+69,35,,,,,7,9,7,5,,129.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Matt Gay', 85.5, 57)",Matt Prater K - ARI,57.0,6083,Matt Gay,IND,K
+70,35,,32.0,37.0,,,,,,,131.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Matt Gay', 100.0, 57)",Matt Gay,57.0,6083,Matt Gay,IND,K
+71,3,,2.0,3.0,,,,,,,9.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Matt Gay', 85.5, 57)",Matt Ammendola,57.0,6083,Matt Gay,IND,K
+72,33.64,,30.42,35.25,,,,,,,140.47,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,122.42-158.52,#14,0.04,8.13,9.64,9.64,2.96,"('Matt Gay', 85.5, 57)","Matt Prater  M. Prater  (K, ARI)",57.0,6083,Matt Gay,IND,K
+73,34.7,,28.47,34.44,,,,,,,132.61,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,113.16-152.06,#25,0.34,9.95,8.33,7.42,2.49,"('Matt Gay', 90.0, 57)","Matt Gay  M. Gay  (K, IND)",57.0,6083,Matt Gay,IND,K
+74,49.0,50.9,25.2,28.8,0.0,5.2,10.4,6.5,3.1,3.6,113.9,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Tyler Bass', 100.0, 283)",Tyler Bass,283.0,7042,Tyler Bass,BUF,K
+75,49,50.0,29.0,36.0,0.232,6.9,11,6.7,3.7,,136.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.232,7.7,12.1,10,3.7,8.0,False,,,,,,,,,"('Tyler Bass', 100.0, 283)",Tyler Bass,283.0,7042,Tyler Bass,BUF,K
+76,49,50.0,29.0,36.0,0.232,6.9,11.0,6.7,3.7,,136.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.232,7.7,12.1,10.0,3.7,8.0,False,,,,,,,,,"('Tyler Bass', 100.0, 283)",Tyler Bass,283.0,7042,Tyler Bass,BUF,K
+77,44,,,,,7,9,7,4,,133.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Tyler Bass', 90.0, 283)",Tyler Bass K - BUF,283.0,7042,Tyler Bass,BUF,K
+78,48,,27.0,32.0,,,,,,,129.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Tyler Bass', 100.0, 283)",Tyler Bass,283.0,7042,Tyler Bass,BUF,K
+79,50.8,,26.06,31.92,,,,,,,138.09,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,125.73-150.45,#17,0.3,10.45,7.87,5.83,1.63,"('Tyler Bass', 90.0, 283)","Tyler Bass  T. Bass  (K, BUF)",283.0,7042,Tyler Bass,BUF,K
+80,47.0,48.1,26.7,31.2,0.0,6.5,7.9,7.2,5.1,4.5,113.5,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Evan McPherson', 100.0, 77)",Evan McPherson,77.0,7839,Evan McPherson,CIN,K
+81,49,50.0,30.0,34.0,0.253,7,8.2,9,5.4,,139.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.253,7.1,8.3,10,5.4,8.2,False,,,,,,,,,"('Evan McPherson', 100.0, 77)",Evan McPherson,77.0,7839,Evan McPherson,CIN,K
+82,49,50.0,30.0,34.0,0.253,7.0,8.2,9.0,5.4,,139.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.253,7.1,8.3,10.0,5.4,8.2,False,,,,,,,,,"('Evan McPherson', 100.0, 77)",Evan McPherson,77.0,7839,Evan McPherson,CIN,K
+83,48,,,,,7,8,9,5,,145.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Evan McPherson', 90.0, 77)",Evan McPherson K - CIN,77.0,7839,Evan McPherson,CIN,K
+84,35,,29.0,33.0,,,,,,,122.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Evan McPherson', 100.0, 77)",Evan McPherson,77.0,7839,Evan McPherson,CIN,K
+85,38.42,,30.01,36.27,,,,,,,142.56,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,125.01-160.11,#12,0.7,10.36,7.82,8.27,2.89,"('Evan McPherson', 90.0, 77)","Evan McPherson  E. McPherson  (K, CIN)",77.0,7839,Evan McPherson,CIN,K
+86,34.5,34.5,33.4,36.0,0.0,8.4,8.9,10.7,5.3,2.6,126.7,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Cameron Dicker', 100.0, 65)",Cameron Dicker,65.0,8259,Cameron Dicker,LAC,K
+87,45,46.0,31.0,34.0,0.253,7.8,8.3,9.2,5.4,,138.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.253,7.8,8.4,10.2,5.4,8.1,False,,,,,,,,,"('Cameron Dicker', 100.0, 65)",Cameron Dicker,65.0,8259,Cameron Dicker,LAC,K
+88,45,46.0,31.0,34.0,0.253,7.8,8.3,9.2,5.4,,138.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.253,7.8,8.4,10.2,5.4,8.1,False,,,,,,,,,"('Cameron Dicker', 100.0, 65)",Cameron Dicker,65.0,8259,Cameron Dicker,LAC,K
+89,40,,,,,7,9,8,5,,137.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Cameron Dicker', 90.0, 65)",Cameron Dicker K - LAC,65.0,8259,Cameron Dicker,LAC,K
+90,35,,32.0,35.0,,,,,,,131.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Cameron Dicker', 100.0, 65)",Cameron Dicker,65.0,8259,Cameron Dicker,LAC,K
+91,34.7,,33.14,36.17,,,,,,,152.49,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,131.68-173.3,#5,0.28,8.83,10.76,8.42,4.9,"('Cameron Dicker', 90.0, 65)","Cameron Dicker  C. Dicker  (K, LAC)",65.0,8259,Cameron Dicker,LAC,K
+92,50.8,53.9,32.9,36.5,0.0,7.4,11.8,4.6,9.2,3.6,138.8,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,"('Brandon Aubrey', 100.0, 0)",Brandon Aubrey,0.0,None,,,
+93,30.7,33.5,33.6,37.4,0.0,8.0,11.0,8.3,6.3,3.8,120.2,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Cairo Santos,,None,,,
+94,23.5,23.8,37.2,43.2,0.0,8.3,10.8,12.9,5.2,6.0,117.2,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Greg Zuerlein,,None,,,
+95,35.0,36.5,30.5,35.6,0.0,11.8,9.8,5.5,3.5,5.2,110.9,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Wil Lutz,,None,,,
+96,30.8,31.7,30.7,35.0,0.0,8.7,7.7,7.1,7.1,4.3,110.1,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Chris Boswell,,None,,,
+97,33.2,33.2,28.1,31.1,0.0,7.0,11.0,3.0,7.2,2.9,108.7,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Chase McLaughlin,,None,,,
+98,27.9,30.8,28.9,32.6,0.0,7.7,8.2,8.0,5.0,3.7,103.6,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Dustin Hopkins,,None,,,
+99,42.7,42.7,26.4,32.9,0.0,9.3,5.9,6.3,4.9,6.5,102.2,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Blake Grupe,,None,,,
+100,32.9,33.4,27.7,33.1,0.0,6.1,10.3,8.7,2.6,5.4,99.5,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Cam Little,,None,,,
+101,29.5,32.8,25.1,27.0,0.0,8.1,7.5,5.3,4.3,1.9,99.0,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Nick Folk,,None,,,
+102,35.0,40.4,27.1,33.2,0.0,6.3,13.5,4.7,2.6,6.1,97.8,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Anders Carlson,,None,,,
+103,24.5,25.9,29.8,36.0,0.0,5.3,9.6,6.7,8.3,6.2,95.6,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Matt Prater,,None,,,
+104,21.9,25.0,28.1,32.3,0.0,5.5,9.3,9.3,4.0,4.2,93.4,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Eddy Pineiro,,None,,,
+105,28.6,31.6,28.8,36.3,0.0,10.7,8.4,5.3,4.3,7.5,92.3,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Joshua Karty,,None,,,
+106,36.5,39.7,22.8,29.1,0.6,6.3,8.2,4.1,3.5,6.3,86.2,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Will Reichard,,None,,,
+107,29.2,31.1,23.6,29.3,0.0,3.7,8.7,6.5,4.6,5.7,82.7,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Graham Gano,,None,,,
+108,27.6,31.8,19.1,22.6,0.0,4.1,5.1,7.7,2.2,3.5,74.3,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Ramiz Ahmed,,None,,,
+109,27.1,28.5,19.0,24.1,0.0,4.8,7.8,3.0,3.4,5.1,68.7,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Greg Joseph,,None,,,
+110,36.2,38.8,11.2,11.9,0.0,1.9,8.1,1.1,0.0,0.7,67.5,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Riley Patterson,,None,,,
+111,30.4,33.1,17.1,24.0,0.0,2.5,5.7,6.1,2.9,6.9,61.1,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Joey Slye,,None,,,
+112,21.2,21.2,10.1,11.8,0.0,1.0,4.2,3.3,1.6,1.7,46.3,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Randy Bullock,,None,,,
+113,25.1,26.2,15.3,24.3,0.0,3.6,4.8,4.7,2.2,8.9,44.2,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Chad Ryland,,None,,,
+114,0.5,0.5,2.0,2.0,0.0,0.0,0.5,1.5,0.0,0.0,6.5,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Matthew Wright,,None,,,
+115,0.6,0.6,0.3,0.3,0.0,0.0,0.0,0.0,0.3,0.0,1.5,FantasySharks,https://www.fantasysharks.com/apps/bert/forecasts/projections.php?csv=1&Sort=&Position=7&scoring=18,,,,,,,,,,,,,,,,,,,Tanner Brown,,None,,,
+116,43,47.0,34.0,38.0,0.265,8,12.5,7.6,5.6,,145.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.265,8.1,14.3,8.5,5.6,8.5,False,,,,,,,,,"('Brandon Aubrey', 100.0, 0)",Brandon Aubrey,0.0,None,,,
+117,49,50.0,31.0,37.0,0.241,9.6,7.8,8,5.1,,142.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.241,10.7,7.9,10,5.1,8.4,False,,,,,,,,,,Blake Grupe,,None,,,
+118,33,36.0,34.0,38.0,0.267,7.3,9.9,11.4,4.83,,135.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.267,7.4,10.8,12.6,4.83,7.9,False,,,,,,,,,,Greg Zuerlein,,None,,,
+119,39,44.0,32.0,39.0,0.322,9,10.3,9,3.54,,135.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.325,9.3,11.5,11.7,3.54,7.9,False,,,,,,,,,,Cam Little,,None,,,
+120,37,40.0,32.0,36.0,0.257,8.5,9.7,8.2,5.5,,133.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.257,8.6,9.8,10.1,5.5,7.8,False,,,,,,,,,,Cairo Santos,,None,,,
+121,41,41.0,30.0,34.0,0.239,7.8,9.8,6.9,5.1,,131.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.24,7.9,10,9.6,5.1,7.7,False,,,,,,,,,,Chase McLaughlin,,None,,,
+122,37,40.0,31.0,35.0,0.247,7.6,8,9.7,5.2,,130.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.247,7.6,8.1,12.3,5.2,7.6,False,,,,,,,,,,Dustin Hopkins,,None,,,
+123,37,42.0,31.0,37.0,0.312,8.7,10,8.7,3.44,,130.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.316,9,11.1,11.4,3.44,7.6,False,,,,,,,,,,Joshua Karty,,None,,,
+124,38,40.0,29.0,33.0,0.254,7,8.9,7.3,5.4,,125.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.254,7,10,9,5.4,7.4,False,,,,,,,,,,Matt Prater,,None,,,
+125,47,52.0,25.0,30.0,0.252,7.1,8.1,7.1,2.77,,122.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.255,7.3,9,9.2,2.77,7.2,False,,,,,,,,,,Jake Bates,,None,,,
+126,36,38.0,28.0,34.0,0.216,8.6,10.3,6.2,2.97,,120.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.216,8.7,11.3,8.5,2.97,7.1,False,,,,,,,,,,Wil Lutz,,None,,,
+127,33,35.0,27.0,31.0,0.218,7.7,7.1,7.4,4.64,,114.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.219,7.9,7.6,9.2,4.64,6.7,False,,,,,,,,,,Chris Boswell,,None,,,
+128,33,37.0,26.0,31.0,0.258,7.2,8.2,7.2,2.84,,111.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.26,7.4,9.2,9.4,2.84,6.5,False,,,,,,,,,,Will Reichard,,None,,,
+129,31,33.0,25.0,27.0,0.202,7.4,7.6,6.1,4.02,,106.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.203,7.5,7.7,6.8,4.02,6.2,False,,,,,,,,,,Nick Folk,,None,,,
+130,25,28.0,26.0,29.0,0.2,5.5,8,7.7,4.21,,103.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.2,5.5,8.1,9.3,4.21,6.1,False,,,,,,,,,,Eddy Pineiro,,None,,,
+131,32,33.0,21.0,27.0,0.174,4.78,6.9,5.7,3.69,,95.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.174,4.83,8.2,8.5,3.69,5.6,False,,,,,,,,,,Graham Gano,,None,,,
+132,28,29.0,19.0,26.0,0.151,4.73,5.9,5.9,2.36,,85.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.151,4.77,7,8.8,2.36,5.0,False,,,,,,,,,,Chad Ryland,,None,,,
+133,21,28.0,19.0,28.0,0.264,5.2,6.1,4.04,2.99,,78.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.264,5.8,8,6.7,2.99,4.6,False,,,,,,,,,,Greg Joseph,,None,,,
+134,18,23.0,14.0,19.0,0.123,3.38,5.8,3.53,0.853,,60.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.123,3.75,7.7,5.5,0.853,3.5,False,,,,,,,,,,Riley Patterson,,None,,,
+135,14,20.0,12.0,18.0,0.099,3.42,4.71,2.85,1.28,,50.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,0.099,3.8,6.2,4.73,1.28,2.9,False,,,,,,,,,,Anders Carlson,,None,,,
+136,0,0.0,0.0,0.0,—,—,—,—,—,,0.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,—,—,—,—,—,0.0,False,,,,,,,,,,Randy Bullock,,None,,,
+137,0,0.0,0.0,0.0,—,—,—,—,—,,0.0,CBS,https://www.cbssports.com/fantasy/football/stats/K/2024/restofseason/projections/nonppr/,17,—,—,—,—,—,—,0.0,False,,,,,,,,,,Brett Maher,,None,,,
+138,43,47.0,34.0,38.0,0.265,8.0,12.5,7.6,5.6,,145.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.265,8.1,14.3,8.5,5.6,8.5,False,,,,,,,,,"('Brandon Aubrey', 100.0, 0)",Brandon Aubrey,0.0,None,,,
+139,49,50.0,31.0,37.0,0.241,9.6,7.8,8.0,5.1,,142.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.241,10.7,7.9,10.0,5.1,8.4,False,,,,,,,,,,Blake Grupe,,None,,,
+140,33,36.0,34.0,38.0,0.267,7.3,9.9,11.4,4.83,,135.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.267,7.4,10.8,12.6,4.83,7.9,False,,,,,,,,,,Greg Zuerlein,,None,,,
+141,39,44.0,32.0,39.0,0.322,9.0,10.3,9.0,3.54,,135.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.325,9.3,11.5,11.7,3.54,7.9,False,,,,,,,,,,Cam Little,,None,,,
+142,37,40.0,32.0,36.0,0.257,8.5,9.7,8.2,5.5,,133.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.257,8.6,9.8,10.1,5.5,7.8,False,,,,,,,,,,Cairo Santos,,None,,,
+143,41,41.0,30.0,34.0,0.239,7.8,9.8,6.9,5.1,,131.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.24,7.9,10.0,9.6,5.1,7.7,False,,,,,,,,,,Chase McLaughlin,,None,,,
+144,37,40.0,31.0,35.0,0.247,7.6,8.0,9.7,5.2,,130.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.247,7.6,8.1,12.3,5.2,7.6,False,,,,,,,,,,Dustin Hopkins,,None,,,
+145,37,42.0,31.0,37.0,0.312,8.7,10.0,8.7,3.44,,130.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.316,9.0,11.1,11.4,3.44,7.6,False,,,,,,,,,,Joshua Karty,,None,,,
+146,38,40.0,29.0,33.0,0.254,7.0,8.9,7.3,5.4,,125.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.254,7.0,10.0,9.0,5.4,7.4,False,,,,,,,,,,Matt Prater,,None,,,
+147,47,52.0,25.0,30.0,0.252,7.1,8.1,7.1,2.77,,122.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.255,7.3,9.0,9.2,2.77,7.2,False,,,,,,,,,,Jake Bates,,None,,,
+148,36,38.0,28.0,34.0,0.216,8.6,10.3,6.2,2.97,,120.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.216,8.7,11.3,8.5,2.97,7.1,False,,,,,,,,,,Wil Lutz,,None,,,
+149,33,35.0,27.0,31.0,0.218,7.7,7.1,7.4,4.64,,114.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.219,7.9,7.6,9.2,4.64,6.7,False,,,,,,,,,,Chris Boswell,,None,,,
+150,33,37.0,26.0,31.0,0.258,7.2,8.2,7.2,2.84,,111.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.26,7.4,9.2,9.4,2.84,6.5,False,,,,,,,,,,Will Reichard,,None,,,
+151,31,33.0,25.0,27.0,0.202,7.4,7.6,6.1,4.02,,106.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.203,7.5,7.7,6.8,4.02,6.2,False,,,,,,,,,,Nick Folk,,None,,,
+152,25,28.0,26.0,29.0,0.2,5.5,8.0,7.7,4.21,,103.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.2,5.5,8.1,9.3,4.21,6.1,False,,,,,,,,,,Eddy Pineiro,,None,,,
+153,32,33.0,21.0,27.0,0.174,4.78,6.9,5.7,3.69,,95.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.174,4.83,8.2,8.5,3.69,5.6,False,,,,,,,,,,Graham Gano,,None,,,
+154,28,29.0,19.0,26.0,0.151,4.73,5.9,5.9,2.36,,85.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.151,4.77,7.0,8.8,2.36,5.0,False,,,,,,,,,,Chad Ryland,,None,,,
+155,21,28.0,19.0,28.0,0.264,5.2,6.1,4.04,2.99,,78.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.264,5.8,8.0,6.7,2.99,4.6,False,,,,,,,,,,Greg Joseph,,None,,,
+156,18,23.0,14.0,19.0,0.123,3.38,5.8,3.53,0.853,,60.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.123,3.75,7.7,5.5,0.853,3.5,False,,,,,,,,,,Riley Patterson,,None,,,
+157,14,20.0,12.0,18.0,0.099,3.42,4.71,2.85,1.28,,50.0,ESPN,https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info,17,—,0.099,3.8,6.2,4.73,1.28,2.9,False,,,,,,,,,,Anders Carlson,,None,,,
+158,48,,,,,9,9,7,5,,148.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,"('Brandon Aubrey', 90.0, 0)",Brandon Aubrey K - DAL,0.0,None,,,
+159,40,,,,,7,9,8,5,,137.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,,Greg Zuerlein K - NYJ,,None,,,
+160,41,,,,,7,9,8,4,,133.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,,Dustin Hopkins K - CLE,,None,,,
+161,38,,,,,7,9,7,5,,132.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,,Blake Grupe K - NO,,None,,,
+162,35,,,,,7,9,7,5,,129.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,,Chris Boswell K - PIT,,None,,,
+163,35,,,,,7,9,7,5,,129.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,,Chase McLaughlin K - TB,,None,,,
+164,33,,,,,7,9,7,5,,127.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,,Nick Folk K - TEN,,None,,,
+165,33,,,,,7,9,7,5,,127.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,,Graham Gano K - NYG,,None,,,
+166,43,,,,,7,8,8,3,,127.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,16,,,,,,,,False,-,,,,,,,,,Joshua Karty K - LAR,,None,,,
+167,37,,,,,7,8,8,4,,126.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,,Cairo Santos K - CHI,,None,,,
+168,36,,,,,7,8,7,4,,122.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,,Wil Lutz K - DEN,,None,,,
+169,40,,,,,6,9,7,3,,121.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,16,,,,,,,,False,-,,,,,,,,,Will Reichard K - MIN,,None,,,
+170,33,,,,,7,8,7,4,,119.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,16,,,,,,,,False,-,,,,,,,,,Chad Ryland K - NE,,None,,,
+171,40,,,,,6,9,6,3,,118.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,16,,,,,,,,False,-,,,,,,,,,Cam Little K - JAX,,None,,,
+172,34,,,,,6,8,6,4,,114.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,17,,,,,,,,False,-,,,,,,,,,Eddy Pineiro K - CAR,,None,,,
+173,33,,,,,6,8,7,3,,111.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,15,,,,,,,,False,-,,,,,,,,,Riley Patterson K - WAS View News,,None,,,
+174,17,,,,,3,4,4,1,,55.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,8,,,,,,,,False,-,,,,,,,,,Ramiz Ahmed K - WAS,,None,,,
+175,12,,,,,2,3,2,1,,38.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,5,,,,,,,,False,-,,,,,,,,,Brett Maher K,,None,,,
+176,11,,,,,2,2,2,1,,34.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,4,,,,,,,,False,-,,,,,,,,,Tanner Brown K - LAR,,None,,,
+177,10,,,,,2,2,2,1,,33.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,4,,,,,,,,False,-,,,,,,,,,Greg Joseph K - GB,,None,,,
+178,10,,,,,2,2,2,1,,33.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,4,,,,,,,,False,-,,,,,,,,,Joey Slye K - NE,,None,,,
+179,8,,,,,2,2,2,1,,31.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,4,,,,,,,,False,-,,,,,,,,,Cade York K - CLE,,None,,,
+180,7,,,,,1,2,1,1,,24.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,3,,,,,,,,False,-,,,,,,,,,John Parker Romo K,,None,,,
+181,-,,,,,-,-,-,-,,0.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,-,,,,,,,,False,-,,,,,,,,,Mike Badgley K - DET IR,,None,,,
+182,-,,,,,-,-,-,-,,0.0,NFL,https://fantasy.nfl.com/research/projections?position=7&count=42&sort=projectedPts&statCategory=projectedStats&statSeason=2024&statType=seasonProjectedStats,-,,,,,,,,False,-,,,,,,,,,Lucas Havrisik K,,None,,,
+183,44,,34.0,37.0,,,,,,,146.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,"('Brandon Aubrey', 100.0, 0)",Brandon Aubrey,0.0,None,,,
+184,31,,33.0,36.0,,,,,,,130.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Cairo Santos,,None,,,
+185,33,,32.0,36.0,,,,,,,129.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Greg Zuerlein,,None,,,
+186,38,,30.0,36.0,,,,,,,128.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Blake Grupe,,None,,,
+187,35,,30.0,34.0,,,,,,,125.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Chase McLaughlin,,None,,,
+188,32,,31.0,36.0,,,,,,,125.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Joshua Karty,,None,,,
+189,36,,29.0,34.0,,,,,,,123.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Greg Joseph,,None,,,
+190,33,,30.0,34.0,,,,,,,123.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Will Reichard,,None,,,
+191,28,,31.0,36.0,,,,,,,121.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Dustin Hopkins,,None,,,
+192,31,,30.0,35.0,,,,,,,121.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Wil Lutz,,None,,,
+193,32,,29.0,32.0,,,,,,,119.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Nick Folk,,None,,,
+194,35,,28.0,33.0,,,,,,,119.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Cam Little,,None,,,
+195,27,,30.0,34.0,,,,,,,117.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Chris Boswell,,None,,,
+196,38,,26.0,31.0,,,,,,,116.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Michael Badgley,,None,,,
+197,33,,27.0,32.0,,,,,,,114.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Graham Gano,,None,,,
+198,33,,27.0,32.0,,,,,,,114.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Matt Prater,,None,,,
+199,24,,29.0,33.0,,,,,,,111.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Eddy Pineiro,,None,,,
+200,34,,25.0,30.0,,,,,,,109.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Joey Slye,,None,,,
+201,29,,26.0,31.0,,,,,,,107.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Anders Carlson,,None,,,
+202,29,,24.0,29.0,,,,,,,101.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Chad Ryland,,None,,,
+203,21,,15.0,18.0,,,,,,,66.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,John Parker Romo,,None,,,
+204,19,,12.0,14.0,,,,,,,55.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Riley Patterson,,None,,,
+205,9,,5.0,6.0,,,,,,,24.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Cade York,,None,,,
+206,7,,3.0,4.0,,,,,,,16.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Mason Crosby,,None,,,
+207,6,,3.0,4.0,,,,,,,15.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Brett Maher,,None,,,
+208,5,,3.0,4.0,,,,,,,14.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Randy Bullock,,None,,,
+209,4,,2.0,3.0,,,,,,,10.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Austin Seibert,,None,,,
+210,2,,2.0,2.0,,,,,,,8.0,FreeDraftGuide,https://www.freedraftguide.com/football/draft-guide-rankings-provider.php?POS=4,,,,,,,,,,,,,,,,,,,Matthew Wright,,None,,,
+211,52.47,,30.17,34.89,,,,,,,156.88,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,139.25-174.51,#1,0.3,7.63,11.48,7.63,3.16,,"Mike Badgley  M. Badgley  (K, DET)",,None,,,
+212,37.32,,32.91,35.92,,,,,,,156.06,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,137.67-174.45,#2,0.58,7.56,9.12,11.1,4.5,,"Nick Folk  N. Folk  (K, TEN)",,None,,,
+213,51.24,,29.1,33.93,,,,,,,152.89,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,135.59-170.19,#4,0.4,8.03,9.91,7.36,3.43,"('Brandon Aubrey', 90.0, 0)","Brandon Aubrey  B. Aubrey  (K, DAL)",0.0,None,,,
+214,38.75,,31.24,35.29,,,,,,,149.47,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,132.21-166.73,#6,0.4,6.95,11.14,8.55,4.21,,"Cairo Santos  C. Santos  (K, CHI)",,None,,,
+215,28.37,,31.8,35.45,,,,,,,143.33,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,123.86-162.8,#11,0.26,7.03,9.29,9.36,5.53,,"Eddy Pineiro  E. Pineiro  (K, CAR)",,None,,,
+216,32.31,,30.93,36.61,,,,,,,141.68,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,124.4-158.96,#13,0.22,9.3,8.77,8.75,3.87,,"Dustin Hopkins  D. Hopkins  (K, CLE)",,None,,,
+217,36.47,,29.17,34.54,,,,,,,137.65,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,120.51-154.79,#18,0.4,8.73,9.56,7.04,3.37,,"Chase McLaughlin  C. McLaughlin  (K, TB)",,None,,,
+218,42.93,,27.81,31.79,,,,,,,136.62,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,120.02-153.22,#20,0.74,8.47,9.65,7.65,1.32,,"Will Reichard  W. Reichard  (K, MIN)",,None,,,
+219,39.95,,28.1,33.72,,,,,,,136.33,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,117.87-154.79,#21,0.34,9.61,8.33,7.38,2.39,,"Blake Grupe  B. Grupe  (K, NO)",,None,,,
+220,26.16,,29.97,34.1,,,,,,,134.83,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,118.37-151.29,#22,0.26,8.5,6.97,9.85,4.4,,"Greg Zuerlein  G. Zuerlein  (K, NYJ)",,None,,,
+221,35.95,,28.46,34.08,,,,,,,134.48,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,116.64-152.32,#23,0.44,8.21,10.15,6.21,3.46,,"Riley Patterson  R. Patterson  (K, JAC)",,None,,,
+222,35.19,,28.49,33.73,,,,,,,132.53,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,116.81-148.25,#26,0.34,10.05,8.45,7.55,2.12,,"Chris Boswell  C. Boswell  (K, PIT)",,None,,,
+223,41.08,,26.48,32.18,,,,,,,130.51,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,113.74-147.28,#27,0.38,8.63,9.53,5.76,2.14,,"Tanner Brown  T. Brown  (K, LA)",,None,,,
+224,30.56,,27.73,34.43,,,,,,,127.08,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,111.09-143.07,#29,0.51,7.25,8.71,9.2,2.06,,"Graham Gano  G. Gano  (K, NYG)",,None,,,
+225,34.7,,27.06,33.67,,,,,,,126.46,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,111.02-141.9,#30,0.5,9.51,8.71,6.29,2.06,,"Wil Lutz  W. Lutz  (K, DEN)",,None,,,
+226,30.19,,26.53,31.69,,,,,,,121.07,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,103.9-138.24,#31,0.35,7.47,9.27,7.43,1.96,,"Ramiz Ahmed  R. Ahmed  (K, WSH)",,None,,,
+227,32.9,,24.69,32.0,,,,,,,119.79,NumberFire,https://www.numberfire.com/nfl/fantasy/remaining-projections/k,,,,,,,,,False,,102.43-137.15,#32,0.36,6.82,7.2,7.71,2.55,,"Joey Slye  J. Slye  (K, NE)",,None,,,
