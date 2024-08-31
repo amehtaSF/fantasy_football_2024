@@ -48,7 +48,7 @@ class MARLDraftEnv(gym.Env):
         
 
         df_players = self._make_players_df()
-        self.dummy_round = False # indicates if the round is a dummy round
+        # self.dummy_round = False # indicates if the round is a dummy round
         self.action_space = spaces.Discrete(ACTION_SPACE_DIM)
         self.actions = {0: "QB", 1: "RB", 2: "WR", 3: "TE", 4: "K", 5: "DEF"} 
         self.observation_space = spaces.Box(low=-np.inf, high=np.inf, shape=(STATE_SPACE_DIM,), dtype=np.float32)
@@ -66,7 +66,7 @@ class MARLDraftEnv(gym.Env):
         
         self.open_players = self.all_players.copy()  # players that are still available to be drafted
         self.draft = self._make_empty_draft()
-        self.objective = "fp_mean"
+        self.objective = "mean"
         self.bye_weeks = pd.read_csv("data/bye_weeks_2024.csv")
         self.update_state()
         
@@ -97,8 +97,8 @@ class MARLDraftEnv(gym.Env):
             "team": None,
             "position": None, # actual position
             "team_pos": None, # labels some players as FLEX
-            "fp_mean": None,
-            "fp_std": None
+            "mean": None,
+            "std": None
         })
         return draft
         
@@ -162,8 +162,8 @@ class MARLDraftEnv(gym.Env):
         def_mean = self.open_players.loc[self.open_players["position"] == "DEF"]["mean"].values
         def_mean = self.trim_or_pad(def_mean, STATE_SCHEMA["DEF_mean"])
         
-        # # make a list of fp_mean for each player on current managers team, then pad to 15
-        # cur_team_means = self.get_team(mgr_num=self.get_cur_mgr())["fp_mean"].values
+        # # make a list of mean for each player on current managers team, then pad to 15
+        # cur_team_means = self.get_team(mgr_num=self.get_cur_mgr())["mean"].values
         # cur_team_means = self.trim_or_pad(cur_team_means, STATE_SCHEMA["cur_team_means"])
         
         # cur_team_pos = self.get_team(mgr_num=self.get_cur_mgr())["position"].values
@@ -292,18 +292,18 @@ class MARLDraftEnv(gym.Env):
     
     def get_mgr_rankings(self, starters=True) -> pd.DataFrame:
         # identify which rounds are all full
-        # full_rounds = self.draft.groupby('round')['fp_mean'].apply(lambda x: x.notnull().all())
+        # full_rounds = self.draft.groupby('round')['mean'].apply(lambda x: x.notnull().all())
         # full_rounds = full_rounds[full_rounds].index
         # draft = self.draft[self.draft['round'].isin(full_rounds)]
         if starters:
             starter_draft = pd.concat([self.get_starters(mgr_num) for mgr_num in range(NUM_MGRS)])
-            rankings = starter_draft.groupby('mgr')['fp_mean'].sum().sort_values(ascending=False)
+            rankings = starter_draft.groupby('mgr')['mean'].sum().sort_values(ascending=False)
         else:
-            rankings = self.draft.groupby('mgr')['fp_mean'].sum().sort_values(ascending=False)
+            rankings = self.draft.groupby('mgr')['mean'].sum().sort_values(ascending=False)
         rankings = pd.DataFrame({
             "rank": np.arange(1, NUM_MGRS+1),
             "mgr": rankings.index,
-            "fp_mean": rankings.values
+            "mean": rankings.values
             }).reset_index(drop=True)
         return rankings
     
@@ -320,8 +320,8 @@ class MARLDraftEnv(gym.Env):
         starters = self.get_starters(mgr_num)
         bench = self.get_bench(mgr_num)
         
-        starters_sum = starters[self.objective].sum()
-        bench_sum = bench[self.objective].sum()
+        starters_sum = starters[self.objective].sum()/10
+        bench_sum = bench[self.objective].sum()/5
         
         starter_ids = starters["sleeper_id"].values
 
@@ -380,12 +380,13 @@ class MARLDraftEnv(gym.Env):
         keeper_round = self.keepers[mgr_num]['round']
         
         # If there is no player and it is not the keeper round, return None
-        if sleeper_id is None or sleeper_id not in self.open_players["sleeper_id"].values:
-            if int(keeper_round) != int(self.cur_round):
-                return None
-   
-        # Get the player from the open players
-        player = self.open_players.loc[self.open_players["sleeper_id"] == sleeper_id].iloc[0].to_dict()
+        # if sleeper_id is None or sleeper_id not in self.open_players["sleeper_id"].values:
+        #     if int(keeper_round) != int(self.cur_round):
+        #         return None
+
+        if sleeper_id and sleeper_id in self.open_players["sleeper_id"].values:   
+            # Get the player from the open players
+            player = self.open_players.loc[self.open_players["sleeper_id"] == sleeper_id].iloc[0].to_dict()
         
         
         # Ignore choice and replace player with keeper if it is the keeper round for the manager
@@ -396,15 +397,10 @@ class MARLDraftEnv(gym.Env):
             for k, v in player_row.iloc[0].items():
                 if k in self.draft.columns:
                     player[k] = v
-                    
-            # player = {
-            #     "sleeper_id": player_row['sleeper_id'].values[0],
-            #     "full_name": player_row['full_name'].values[0],
-            #     "team": player_row['team'].values[0],
-            #     "position": player_row['position'].values[0],
-            #     "mean": player_row['mean'].values[0],
-            #     "std": player_row['std'].values[0]
-            # }
+        
+        # If it is not keeper round and no player was given return no player
+        if not sleeper_id or sleeper_id not in self.open_players["sleeper_id"].values:
+            return None
         
         team_comp = self.get_team_comp(mgr_num, flex=False)
         # Indicates if the team is ready to draft a flex player, ie. rb, wr, te are filled
@@ -440,15 +436,20 @@ class MARLDraftEnv(gym.Env):
             self.cur_mgr = self.draft["mgr"].values[self.cur_turn]
             return True
         
-        elif self.cur_turn == len(self.turns):
-            # start of dummy round
-            self.dummy_round = True
-            self.cur_round = NUM_DRAFT_ROUNDS
-            self.cur_mgr = 0
-            return True
-        else:
+        # elif self.cur_turn == len(self.turns):
+        #     # start of dummy round
+        #     self.dummy_round = True
+        #     self.cur_round = NUM_DRAFT_ROUNDS
+        #     self.cur_mgr = 0
+        #     return True
+        # else:
             # continuing dummy round 
-            self.cur_mgr += 1
+            # self.cur_round = NUM_DRAFT_ROUNDS
+            # self.cur_mgr += 1
+        else:
+            self.cur_round = NUM_DRAFT_ROUNDS
+            self.cur_mgr = None
+            
 
     
     
@@ -456,28 +457,29 @@ class MARLDraftEnv(gym.Env):
         
         cur_round = self.cur_round
         cur_turn = self.cur_turn
-        mgr_num = self.cur_mgr
-        assert cur_turn <= len(self.draft), "Draft is over"  # added dummy round
-        # assert cur_turn < len(self.draft), "Draft is over"
+        assert cur_turn < len(self.draft), "Draft is over"
+        # mgr_num = self.cur_mgr
+        mgr_num = self.draft["mgr"].values[cur_turn]
+        # assert cur_turn <= len(self.draft), "Draft is over"  # added dummy round
         
         # -- Check if this is last pick of draft -- #
         # terminated = True if cur_turn == len(self.draft)-1 else False
         
         # -- Dummy round for finalizing rewards -- #
-        if cur_round == NUM_DRAFT_ROUNDS:
-            terminated = True if mgr_num == NUM_MGRS - 1 else False
-            truncated = False
-            reward = self.calc_reward(mgr_num)
-            info = {
-                "cur_turn": cur_turn,
-                "cur_round": cur_round,
-                "player": None,
-                "mgr_num": mgr_num,
-                "terminated": terminated,
-                "reward": reward,
-                "notes": "Draft is over"
-            }
-            return self.state, reward, terminated, truncated, info
+        # if cur_round == NUM_DRAFT_ROUNDS:
+        #     terminated = True if mgr_num == NUM_MGRS - 1 else False
+        #     truncated = False
+        #     reward = self.calc_reward(mgr_num)
+        #     info = {
+        #         "cur_turn": cur_turn,
+        #         "cur_round": cur_round,
+        #         "player": None,
+        #         "mgr_num": mgr_num,
+        #         "terminated": terminated,
+        #         "reward": reward,
+        #         "notes": "Draft is over"
+        #     }
+        #     return self.state, reward, terminated, truncated, info
         
         # mgr_num = self.draft["mgr"].values[cur_turn]
         
@@ -509,10 +511,10 @@ class MARLDraftEnv(gym.Env):
         # if (self.cur_turn+1) % NUM_MGRS == 0:
         
         # -- determine if draft is over and then calculate reward -- #
-        if terminated:
-            reward = [self.calc_reward(mgr_num) for mgr_num in range(NUM_MGRS)]
-        else:
-            reward = [0 for mgr_num in range(NUM_MGRS)]
+        # if terminated:
+        #     reward = [self.calc_reward(mgr_num) for mgr_num in range(NUM_MGRS)]
+        # else:
+        #     reward = [0 for mgr_num in range(NUM_MGRS)]
             
         
         # -- increment the turn and round and update state vector -- #
@@ -533,8 +535,8 @@ class MARLDraftEnv(gym.Env):
             "cur_round": cur_round,
             "player": actual_player,
             "mgr_num": mgr_num,
-            "terminated": terminated,
-            "reward": reward,
+            # "terminated": terminated,
+            # "reward": reward,
             "notes": None,
             "draft": draft
         }  
@@ -542,11 +544,12 @@ class MARLDraftEnv(gym.Env):
         
         truncated = False
         terminated = False
+        reward = 0  # reward is always 0 from step bc it is calculated in the next step
         
         return self.state, reward, terminated, truncated, info
     
     def draft_full(self) -> bool:
-        return self.draft["fp_mean"].isnull().sum() == 0
+        return self.draft["mean"].isnull().sum() == 0
     
     def get_mgr_draft(self, mgr_num: int) -> pd.DataFrame:
         return self.draft.loc[self.draft["mgr"] == mgr_num]
@@ -557,15 +560,15 @@ class MARLDraftEnv(gym.Env):
     def get_sum_fp(self, mgr_num: int, starters=False) -> float:
         # draft = self.draft.loc[self.draft["round"] <= self.cur_round]
         
-        # # Identify combinations of 'mgr' and 'round' where 'fp_mean' is fully filled
-        # grouped = draft.groupby(['mgr', 'round'])['fp_mean'].apply(lambda x: x.notnull().all())
+        # # Identify combinations of 'mgr' and 'round' where 'mean' is fully filled
+        # grouped = draft.groupby(['mgr', 'round'])['mean'].apply(lambda x: x.notnull().all())
 
         # # Filter the DataFrame to include only the valid combinations
         # completed_rounds = grouped[grouped].index
         # draft = draft[draft.set_index(['mgr', 'round']).index.isin(completed_rounds)].reset_index(drop=True)
         
-        # # Group by 'mgr' and sum 'fp_mean', converting the result to a dictionary
-        # sum_fp = draft.groupby("mgr")["fp_mean"].sum().to_dict(orient='records')
+        # # Group by 'mgr' and sum 'mean', converting the result to a dictionary
+        # sum_fp = draft.groupby("mgr")["mean"].sum().to_dict(orient='records')
         # sum_fp['round'] = draft['round'].max()
         
         # If 'starters' is True, filter the DataFrame to include only the starters
@@ -574,7 +577,7 @@ class MARLDraftEnv(gym.Env):
         else: 
             team = self.get_team(mgr_num)
             
-        sum_fp = team["fp_mean"].sum()
+        sum_fp = team["mean"].sum()
     
         return sum_fp
     
