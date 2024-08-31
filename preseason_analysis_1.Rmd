@@ -211,20 +211,40 @@ df_hist = df_hist_raw %>%
   ) %>% 
   ungroup %>% 
   select(-position) %>% 
-  rename(hist_name = player_display_name)
+  rename(hist_name = player_display_name) %>%
+  mutate(hist_name = str_replace_all(hist_name, "\\.", "")) %>%
+  mutate(hist_name = str_replace_all(hist_name, "'", "")) %>% 
+  mutate(hist_name = tolower(hist_name)) %>% 
+  mutate(row_num=row_number()) %>% 
+  mutate(hist_name = str_replace_all(hist_name, "josh palmer", "joshua palmer")) %>%
+  mutate(hist_name = str_replace_all(hist_name, "drew ogletree", "andrew ogletree"))  %>% 
+  mutate(hist_name = str_replace_all(hist_name, "scott miller", "scotty miller")) 
 
-# df_nflverse_stats %>% 
-#   write_csv("data/nflverse/mean_var_weekly_fp.csv")
 
 library(stringdist)
 
 df_full <- df_proj %>% 
-  mutate(row_num = map_dbl(full_name, ~{
-    amatch(., df_hist$hist_name, method="lv", maxDist = 3)
-  })) %>% 
-  left_join(df_hist %>% 
-              mutate(row_num = row_number()), 
-            by="row_num") 
+  mutate(sleeper_name = full_name) %>%
+  mutate(sleeper_name = tolower(sleeper_name)) %>%
+  mutate(sleeper_name = str_replace_all(sleeper_name, "\\.", "")) %>%
+  mutate(sleeper_name = str_replace_all(sleeper_name, "'", "")) %>%
+  left_join(df_hist, by = c("sleeper_name" = "hist_name")) %>% 
+  select(-row_num, -sleeper_name) 
+  # mutate(row_num = map_dbl(sleeper_name, ~{
+  #   amatch(., df_hist$hist_name, method="lv", maxDist = 2)
+  # })) %>% 
+  # left_join(df_hist, by="row_num") 
+
+df_full %>% 
+  mutate(lv_dist = stringdist(sleeper_name, hist_name, method="lv")) %>%
+  select(full_name, hist_name, lv_dist, team, position) %>% 
+  view
+
+df_full %>% 
+  write_csv("data/sleeper_proj_hist.csv")
+
+
+
   
 
   # select(player_display_name, full_name, season, week, position, fantasy_points) %>% 

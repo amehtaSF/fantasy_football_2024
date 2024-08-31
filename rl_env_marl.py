@@ -322,8 +322,6 @@ class MARLDraftEnv(gym.Env):
         
         starters_sum = starters[self.objective].sum()/10
         bench_sum = bench[self.objective].sum()/5
-        
-        starter_ids = starters["sleeper_id"].values
 
 
         reward = 0
@@ -397,6 +395,7 @@ class MARLDraftEnv(gym.Env):
             for k, v in player_row.iloc[0].items():
                 if k in self.draft.columns:
                     player[k] = v
+            # self.open_players = self.open_players.loc[self.open_players["sleeper_id"] != self.keepers[mgr_num]['sleeper_id']]
         
         # If it is not keeper round and no player was given return no player
         if not sleeper_id or sleeper_id not in self.open_players["sleeper_id"].values:
@@ -419,7 +418,7 @@ class MARLDraftEnv(gym.Env):
                 self.draft.loc[self.cur_turn, k] = v
         
         # -- Remove the player from the open players -- #
-        self.open_players = self.open_players.loc[self.open_players["sleeper_id"] != sleeper_id]
+        self.open_players = self.open_players.loc[self.open_players["sleeper_id"] != player['sleeper_id']]
         
         return player
     
