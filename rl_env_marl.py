@@ -49,6 +49,7 @@ class MARLDraftEnv(gym.Env):
 
         df_players = self._make_players_df()
         # self.dummy_round = False # indicates if the round is a dummy round
+        self.stochastic_temp = .5
         self.action_space = spaces.Discrete(ACTION_SPACE_DIM)
         self.actions = {0: "QB", 1: "RB", 2: "WR", 3: "TE", 4: "K", 5: "DEF"} 
         self.observation_space = spaces.Box(low=-np.inf, high=np.inf, shape=(STATE_SPACE_DIM,), dtype=np.float32)
@@ -64,11 +65,10 @@ class MARLDraftEnv(gym.Env):
         self.all_players = self.all_players.sort_values(by="mean", ascending=False).reset_index(drop=True)
         
         
-        self.open_players = self.all_players.copy()  # players that are still available to be drafted
+        # self.open_players = self.all_players.copy()  # players that are still available to be drafted
         self.draft = self._make_empty_draft()
         self.objective = "mean"
         self.bye_weeks = pd.read_csv("data/bye_weeks_2024.csv")
-        self.update_state()
         
         self.keepers = {
             0: {"round": 5, "sleeper_id": "8146"},
@@ -85,9 +85,9 @@ class MARLDraftEnv(gym.Env):
             11: {"round": 11, "sleeper_id": "10859"}
         }
         
-        # remove keepers from open players
-        self.open_players = self.open_players.loc[~self.open_players["sleeper_id"].isin([v["sleeper_id"] for v in self.keepers.values()])]
-    
+        self.reset_open_players() # remove keepers
+        self.update_state()
+        
     def _make_empty_draft(self):
         draft = pd.DataFrame({  # the draft board
             "round": [turn["round"] for turn in self.turns],
@@ -237,6 +237,11 @@ class MARLDraftEnv(gym.Env):
                     turns.append({"round": round_num, "mgr": i})
         return turns
     
+    
+    def reset_open_players(self):
+        ''' Reset the open players to all players '''
+        self.open_players = self.all_players.copy()
+        self.open_players = self.open_players.loc[~self.open_players["sleeper_id"].isin([v["sleeper_id"] for v in self.keepers.values()])]
         
     def reset(self, seed=None):
         """Resets the environment to an initial state and returns an initial observation."""
@@ -249,7 +254,7 @@ class MARLDraftEnv(gym.Env):
         self.cur_round = 0
         self.cur_turn = 0
         self.dummy_round = False
-        self.open_players = self.all_players.copy()
+        self.reset_open_players()
         
         
         self.update_state()
@@ -326,7 +331,7 @@ class MARLDraftEnv(gym.Env):
 
         reward = 0
         if self.is_starters_filled(mgr_num):
-            reward = starters_sum + .2*bench_sum
+            reward = 1.25*starters_sum + .2*bench_sum
             # reward = starters_sum
         else:
             reward = -.5
@@ -334,6 +339,19 @@ class MARLDraftEnv(gym.Env):
         # -- bonus for first place -- #
         if self.get_mgr_rankings().iloc[0]["mgr"] == mgr_num:
             reward += 1
+        # -- bonus for second place -- #
+        if self.get_mgr_rankings().iloc[1]["mgr"] == mgr_num:
+            reward += .5
+        # -- bonus for third place -- #
+        if self.get_mgr_rankings().iloc[2]["mgr"] == mgr_num:
+            reward += .25
+            
+        # -- penalize double defense or double kicker -- #
+        team_comp = self.get_team_comp(mgr_num, flex=False)
+        if team_comp.get("DEF", 0) > 1:
+            reward -= .5
+        if team_comp.get("K", 0) > 1:
+            reward -= .5
             
         # num_incomplete_team_weeks = self.get_num_incomplete_team_weeks(mgr_num)
         # reward -= num_incomplete_team_weeks/(17*2)
@@ -382,23 +400,28 @@ class MARLDraftEnv(gym.Env):
         #     if int(keeper_round) != int(self.cur_round):
         #         return None
 
-        if sleeper_id and sleeper_id in self.open_players["sleeper_id"].values:   
+        if sleeper_id and sleeper_id in self.open_players["sleeper_id"].values and int(keeper_round) != int(self.cur_round):   
             # Get the player from the open players
             player = self.open_players.loc[self.open_players["sleeper_id"] == sleeper_id].iloc[0].to_dict()
         
         
         # Ignore choice and replace player with keeper if it is the keeper round for the manager
         if int(keeper_round) == int(self.cur_round):
-            # print(f"Keeper round for mgr {mgr_num}")
             player_row = self.all_players.loc[self.all_players['sleeper_id'] == self.keepers[mgr_num]['sleeper_id']]
             player = {}
             for k, v in player_row.iloc[0].items():
                 if k in self.draft.columns:
                     player[k] = v
-            # self.open_players = self.open_players.loc[self.open_players["sleeper_id"] != self.keepers[mgr_num]['sleeper_id']]
+            # print("---")
+            # print(self.keepers[mgr_num]['sleeper_id'])
+            # print(player['sleeper_id'])
+            # print(self.open_players.shape)
+            self.open_players = self.open_players.loc[self.open_players["sleeper_id"] != str(player['sleeper_id'])]
+            # print(self.open_players.shape)
+            # print("---")
         
         # If it is not keeper round and no player was given return no player
-        if not sleeper_id or sleeper_id not in self.open_players["sleeper_id"].values:
+        if not sleeper_id or sleeper_id not in self.open_players["sleeper_id"].values and int(keeper_round) != int(self.cur_round):
             return None
         
         team_comp = self.get_team_comp(mgr_num, flex=False)
@@ -418,7 +441,7 @@ class MARLDraftEnv(gym.Env):
                 self.draft.loc[self.cur_turn, k] = v
         
         # -- Remove the player from the open players -- #
-        self.open_players = self.open_players.loc[self.open_players["sleeper_id"] != player['sleeper_id']]
+        self.open_players = self.open_players.loc[self.open_players["sleeper_id"] != str(player['sleeper_id'])]
         
         return player
     
@@ -450,10 +473,109 @@ class MARLDraftEnv(gym.Env):
             self.cur_mgr = None
             
 
+    def stochastic_choice(self, mgr_num: int=None, temperature=None) -> dict:
+        '''
+        picks a random (intelligent) player for the NPC managers.
+        unlike reasonable_action methods, this returns the player as a dict
+        This allows us to choose players who are not the highest ranked player in a position
+        
+        First, draft QB, RB, WR, TE to fill starters incl. flex.
+        Do this by taking the top 5 players in needed positions and
+        sampling from their softmaxed means.
+        That takes 8 rounds.
+        In rounds 9-13, K and DEF will be included in softmax.
+        In rounds 14-15, verify that every position is filled.
+        
+        '''
+        if temperature is None:
+            temperature = self.stochastic_temp
+        if mgr_num is None:
+            mgr_num = self.get_cur_mgr()
+        team_comp = self.get_team_comp(mgr_num, flex=True)
+        
+        if self.cur_round < 8: # rounds 1-8
+            needed_pos_counts = self.get_needed_pos_counts(mgr_num, flex=True)
+            needed_pos_counts["K"] = 0
+            needed_pos_counts["DEF"] = 0
+            # first get what non-flex non kicker non def positions are needed
+            needed_positions = [pos for pos, count in needed_pos_counts.items() if pos != "FLEX" and count > 0]
+            # check if rb, wr, te are filled so we can move to working on flex
+            rb_te_wr_filled = team_comp.get("RB", 0) >= STARTER_COMPOSITION["RB"] and \
+                team_comp.get("WR", 0) >= STARTER_COMPOSITION["WR"] and \
+                team_comp.get("TE", 0) >= STARTER_COMPOSITION["TE"]
+                
+            # if the rb, wr, and te are filled, check if flex is filled
+            # if flex is not filled, add rb, wr, te to needed positions
+            if needed_pos_counts.get("FLEX", 0) > 0 and rb_te_wr_filled:
+                    needed_positions += ["RB", "WR", "TE"]
+            
+            # Now we have established which positions to look for 
+            # if we don't need players or if no players are open in needed position, 
+            # it will sample from the top 5 players
+            player = self._sample_player(temperature=temperature, needed_positions=needed_positions)
+            return player
+
+        if self.cur_round >= 8 and self.cur_round < 13: # rounds 9-13
+            # in rounds 8-13, go for non-K and non-DEF positions alongside K and DEF
+            # and then once those are filled, go for K and DEF alongside all players
+            needed_pos_counts = self.get_needed_pos_counts(mgr_num, flex=True)
+            needed_positions = [pos for pos, count in needed_pos_counts.items() if pos != "FLEX" and count > 0]
+            rb_te_wr_filled = team_comp.get("RB", 0) >= STARTER_COMPOSITION["RB"] and \
+                team_comp.get("WR", 0) >= STARTER_COMPOSITION["WR"] and \
+                team_comp.get("TE", 0) >= STARTER_COMPOSITION["TE"]
+            if needed_pos_counts.get("FLEX", 0) > 0 and rb_te_wr_filled:
+                needed_positions += ["RB", "WR", "TE"]
+            exclude = [pos for pos in ["K", "DEF"] if team_comp.get(pos, 0) >= STARTER_COMPOSITION[pos]]
+            if any([pos != "K" and pos != "DEF" for pos in needed_positions]):
+                # if anything is needed besides K and DEF
+                player = self._sample_player(temperature=temperature, needed_positions=needed_positions, exclude_pos=exclude)
+            else:
+                player = self._sample_player(temperature=temperature, exclude_pos=exclude)
+            return player
+        
+        if self.cur_round >= 13: # rounds 14-15
+            needed_pos_counts = self.get_needed_pos_counts(mgr_num, flex=True)
+            needed_positions = [pos for pos, count in needed_pos_counts.items() if pos != "FLEX" and count > 0]
+            rb_te_wr_filled = team_comp.get("RB", 0) >= STARTER_COMPOSITION["RB"] and \
+                team_comp.get("WR", 0) >= STARTER_COMPOSITION["WR"] and \
+                team_comp.get("TE", 0) >= STARTER_COMPOSITION["TE"]
+            if needed_pos_counts.get("FLEX", 0) > 0 and rb_te_wr_filled:
+                 needed_positions += ["RB", "WR", "TE"]
+            exclude = [pos for pos in ["K", "DEF"] if team_comp.get(pos, 0) >= STARTER_COMPOSITION[pos]]
+            # print(self.cur_round)
+            # print(exclude)
+            # print(team_comp)
+            # print(needed_positions)
+            player = self._sample_player(temperature=temperature, needed_positions=needed_positions, exclude_pos=exclude)
+            return player
+        
+    
+    
+    def _sample_player(self, temperature, needed_positions=None, exclude_pos=None, samp_size=5):
+        ''' 
+        Choose a player from a list of needed positions 
+        If none are available, sample from the top 5 players (within 100 points of the top player)
+        Downweight probability of defense since points are higher but variance is super high and preds are high
+        '''
+        if needed_positions:
+            # print(needed_positions)
+            players = self.open_players[self.open_players['position'].isin(needed_positions)].copy()
+        if not needed_positions or players.empty:
+            players = self.open_players.copy()
+        if exclude_pos:
+            players = players.loc[~players["position"].isin(exclude_pos)]
+        options = players.loc[players["mean"] >= players["mean"].max() - 100]
+        options = options.iloc[:np.min([samp_size, len(options)])]
+        options.loc[options["position"] == "DEF", "mean"] -= 25  # Downweighting defense 
+        w = softmax(options["mean"].values, temperature=temperature)
+        chosen_player = options.sample(1, weights=w).iloc[0]
+        return chosen_player.to_dict()
+  
     
     
     def step(self, action, deterministic=True):
         
+        # print("8146" in self.open_players["sleeper_id"].values)
         cur_round = self.cur_round
         cur_turn = self.cur_turn
         assert cur_turn < len(self.draft), "Draft is over"
@@ -464,25 +586,8 @@ class MARLDraftEnv(gym.Env):
         # -- Check if this is last pick of draft -- #
         # terminated = True if cur_turn == len(self.draft)-1 else False
         
-        # -- Dummy round for finalizing rewards -- #
-        # if cur_round == NUM_DRAFT_ROUNDS:
-        #     terminated = True if mgr_num == NUM_MGRS - 1 else False
-        #     truncated = False
-        #     reward = self.calc_reward(mgr_num)
-        #     info = {
-        #         "cur_turn": cur_turn,
-        #         "cur_round": cur_round,
-        #         "player": None,
-        #         "mgr_num": mgr_num,
-        #         "terminated": terminated,
-        #         "reward": reward,
-        #         "notes": "Draft is over"
-        #     }
-        #     return self.state, reward, terminated, truncated, info
-        
-        # mgr_num = self.draft["mgr"].values[cur_turn]
-        
         # -- Choose the player -- #
+        # print("8146" in self.open_players["sleeper_id"].values)
         filtered_players = self.open_players.loc[self.open_players["position"] == self.actions[action]]
         filtered_players = filtered_players.sort_values(by="mean", ascending=False).reset_index(drop=True) 
         if not filtered_players.empty:
@@ -612,7 +717,7 @@ class MARLDraftEnv(gym.Env):
     
     def render(self, mode='human'):
         """Render the environment to the screen (optional)."""
-        print(f"State: {self.state}")
+        print(self.draft)
     
     def close(self):
         """Cleanup the environment before closing (optional)."""

@@ -54,15 +54,15 @@ class DraftEnv(gym.Env):
         self.cur_round = 0  # increments from 0 to NUM_DRAFT_ROUNDS - 1
         self.all_players = df_players.dropna(subset=["mean", "std"]).copy()  # all players
         # print(f'Scaling mean points by {self.all_players["mean"].max()}')
-        self.all_players["mean"] = self.all_players["mean"] / self.all_players["mean"].max() # scale points
+        self.fp_scalar = self.all_players["mean"].max()
+        self.all_players["mean"] = self.all_players["mean"] / self.fp_scalar # scale points
         self.all_players = self.all_players.sort_values(by="mean", ascending=False).reset_index(drop=True)
         
         
-        self.open_players = self.all_players.copy()  # players that are still available to be drafted
+        # self.open_players = self.all_players.copy()  # players that are still available to be drafted
         self.draft = self._make_empty_draft()
         self.objective = "fp_mean"
         self.bye_weeks = pd.read_csv("data/bye_weeks_2024.csv")
-        self.update_state()
         
         self.keepers = {
             0: {"round": 5, "sleeper_id": "8146"},
@@ -80,7 +80,9 @@ class DraftEnv(gym.Env):
         }
         
         # remove keepers from open players
-        self.open_players = self.open_players.loc[~self.open_players["sleeper_id"].isin([v["sleeper_id"] for v in self.keepers.values()])]
+        # self.open_players = self.open_players.loc[~self.open_players["sleeper_id"].isin([v["sleeper_id"] for v in self.keepers.values()])]
+        self.reset_open_players()
+        self.update_state()
     
     def _make_empty_draft(self):
         draft = pd.DataFrame({  # the draft board
@@ -276,7 +278,12 @@ class DraftEnv(gym.Env):
             player = self._sample_player(temperature=temperature, needed_positions=needed_positions, exclude_pos=exclude)
             return player
         
-    
+
+    def top_players_within_x(self, df, max_mean=None, x=150, n=5):
+        if not max_mean:
+            max_mean = df['mean'].max()
+        filtered_df = df[df['mean'] >= max_mean - x/self.fp_scalar]
+        return filtered_df.nlargest(n, 'mean')
     
     def _sample_player(self, temperature, needed_positions=None, exclude_pos=None, samp_size=5):
         ''' 
@@ -291,9 +298,9 @@ class DraftEnv(gym.Env):
             players = self.open_players.copy()
         if exclude_pos:
             players = players.loc[~players["position"].isin(exclude_pos)]
-        options = players.loc[players["mean"] >= players["mean"].max() - 100]
-        options = options.iloc[:np.min([samp_size, len(options)])]
-        options.loc[options["position"] == "DEF", "mean"] -= 25  # Downweighting defense 
+        players.loc[players["position"] == "DEF", "mean"] -= (25/self.fp_scalar)  # Downweighting defense 
+        players.loc[players["position"] == "QB", "mean"] -= (50/self.fp_scalar)  # Downweighting QB 
+        options = players.groupby('position').apply(lambda x: self.top_players_within_x(x, max_mean=players['mean'].max())).reset_index(drop=True)
         w = softmax(options["mean"].values, temperature=temperature)
         chosen_player = options.sample(1, weights=w).iloc[0]
         return chosen_player.to_dict()
@@ -448,7 +455,11 @@ class DraftEnv(gym.Env):
         return turns
     
 
-        
+    def reset_open_players(self):
+        ''' Reset the open players to all players '''
+        self.open_players = self.all_players.copy()
+        self.open_players = self.open_players.loc[~self.open_players["sleeper_id"].isin([v["sleeper_id"] for v in self.keepers.values()])]
+               
         
     def reset(self, seed=None):
         """Resets the environment to an initial state and returns an initial observation."""
@@ -460,7 +471,9 @@ class DraftEnv(gym.Env):
         self.draft = self._make_empty_draft()
         self.cur_round = 0
         self.cur_turn = 0
-        self.open_players = self.all_players.copy()
+        self.reset_open_players()
+        
+        
         
         
         self.update_state()
