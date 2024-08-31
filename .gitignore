@@ -21,6 +21,7 @@ fantasy-football-2024-430622-70fe6adeafe5.json
 
 # models
 **/*.zip
+**/*.json
 
 # RStudio
 **/*.RData
